@@ -1,0 +1,109 @@
+.gb-banner {
+	padding: 220px 0;
+	background-image: url(banner-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.banner-info {
+	font-size: 24px;
+	line-height: 36px;
+	max-width: 700px;
+}
+
+.banner-info h1 {
+	font-size: 57px;
+	margin: 5px 0;
+	line-height: 50px;
+	font-weight: normal;
+    animation-delay: 0.95s;
+	-webkit-animation-delay: 0.95s;	
+	font-family: 'Pacifico', cursive;
+}
+
+.banner-info h2 {
+	font-size: 92px;
+	font-weight: 900;
+	margin: 0 0 20px;
+    animation-delay: 0.65s;
+    -webkit-animation-delay: 0.65s;	
+}
+
+.banner-info p {
+    animation-delay: 0.65s;
+    -webkit-animation-delay: 0.65s;	
+}
+
+.banner-info .buttons {
+    animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;	
+}
+
+.banner-info .btn.btn-primary {
+	margin-top: 30px;
+}
+
+.banner-info .buttons>a.btn {
+	margin-right: 20px;
+}
+
+.gb-banner.banner-one .banner-info h1 {
+	color: #f26522;
+}
+
+
+.gb-banner.banner-one .btn-primary.button-reserve {
+	background-color: #f26522;
+	border-color: #f26522;
+}
+
+.gb-banner.banner-one .btn-primary.button-reserve:hover {
+	color: #f26522;
+}
+
+.gb-banner.banner-one .btn-primary.button-reserve:before,
+.gb-banner.banner-one .btn-primary.button-reserve:after {
+	background-color: #fff;
+}
+
+.banner-one.text-center .banner-info {
+	display: inline-block;
+}
+
+/* .btn.btn-primary {
+    background-color: transparent;
+    border-color: #fff;
+}
+.btn.btn-primary:hover {
+    color: #fff;
+} */
+
+/* .btn-primary.button-reserve {
+    background-color: #f26522;
+    border-color: #f26522;
+}
+.btn-primary.button-reserve:hover {
+    color: #f26522;
+} */
+@media (max-width: 767px) {
+	
+	.banner-info {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.banner-info h1 {
+		font-size: 26px;
+	}
+	.banner-info h2 {
+		font-size: 46px;
+    }
+}
+
+/* XS Portrait */
+@media (max-width: 578px) {
+	
+	.gb-banner.banner-one .buttons>a.btn {
+		margin-right: 5px;
+    }
+}

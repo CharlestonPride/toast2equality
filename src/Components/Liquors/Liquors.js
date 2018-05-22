@@ -6,7 +6,6 @@ import RumHaven from './RumHaven.jpg';
 import Honey from './Honey.jpg';
 import Grapefruit from './Grapefruit.jpg';
 import Camarena from './Camarena.jpg';
-import Breakthru from './BBG_SC-Horizontal-Logotype.jpg';
 import './Liquors.css';
 
 export default class Liquors extends Component {
@@ -22,9 +21,6 @@ export default class Liquors extends Component {
                     <Liquor image={Honey} />
                     <Liquor image={Mango} />
                     <Liquor image={RumHaven} />
-                </div>
-                <div className="row">
-                    <img src={Breakthru}/>
                 </div>
             </div>
         </div>

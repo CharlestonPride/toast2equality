@@ -6,6 +6,11 @@
 	top:20px;
 }
 
+.navbar-brand {
+	color: #f26522;
+	font-family: 'Pacifico', cursive;
+}
+
 .navbar.menu-bg {
     top: 0;
     background-color: #000;

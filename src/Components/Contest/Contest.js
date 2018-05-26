@@ -8,6 +8,8 @@ export default class Contest extends Component {
             <div className="container text-center">
                 <div className="section-title">
                     <h1 className="font-pacifico">The Contest</h1>
+                </div>
+                <div className="section-content">
                     <h2>6 Liquors</h2>
                     <span>
                         <i className="fa fa-plus" aria-hidden="true"></i>

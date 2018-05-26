@@ -2,12 +2,13 @@
 h1 {
     font-family: 'Pacifico', cursive;
 }
-.section-title h2 colored{
+.section-content h2 colored{
     color: #f26522;
 }
 
 .gb-about {
 	background-size: cover;
+	background: url("./round.png")
 }
 
 .gb-about .about {
@@ -117,7 +118,7 @@ h1 {
 	font-weight: normal;
 }
 
-.section-title h2 {
+.section-content h2 {
 	color: #333;
 	font-size: 32px;
 	font-weight: 900;
@@ -125,7 +126,7 @@ h1 {
 	margin: 10px 0 35px;
 }
 
-.section-title span {
+.section-content span {
 	display: inline-block;
 	font-size: 20px;
 	position: relative;
@@ -134,8 +135,8 @@ h1 {
 	background-color: #fff;
 }
 
-.section-title span:before,
-.section-title span:after {
+.section-content span:before,
+.section-content span:after {
 	position: absolute;
 	content: "";
 	top: 50%;
@@ -145,11 +146,11 @@ h1 {
 	margin: 0 10px;
 }
 
-.section-title span:before {
+.section-content span:before {
 	left: 100%;
 }
 
-.section-title span:after {
+.section-content span:after {
 	right: 100%;
 }
 

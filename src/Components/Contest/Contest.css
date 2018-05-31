@@ -2,7 +2,7 @@
 h1 {
     font-family: 'Pacifico', cursive;
 }
-.section-content h2 colored{
+.gb-about .section-content h2 colored{
     color: #f26522;
 }
 
@@ -104,21 +104,21 @@ h1 {
 .gb-about-us .btn.btn-primary {
 	margin-top: 30px;
 }
-.section-title {
+.gb-about .section-title {
 	font-size: 14px;
 	max-width: 605px;
 	margin-bottom: 80px;
 	display: inline-block;
 }
 
-.section-title h1{
+.gb-about .section-title h1{
 	font-size: 45px;
 	color: #f26522;
 	margin: 0;
 	font-weight: normal;
 }
 
-.section-content h2 {
+.gb-about .section-content h2 {
 	color: #333;
 	font-size: 32px;
 	font-weight: 900;
@@ -126,7 +126,7 @@ h1 {
 	margin: 10px 0 35px;
 }
 
-.section-content span {
+.gb-about .section-content span {
 	display: inline-block;
 	font-size: 20px;
 	position: relative;
@@ -135,8 +135,8 @@ h1 {
 	background-color: #fff;
 }
 
-.section-content span:before,
-.section-content span:after {
+.gb-about .section-content span:before,
+.gb-about .section-content span:after {
 	position: absolute;
 	content: "";
 	top: 50%;
@@ -146,15 +146,15 @@ h1 {
 	margin: 0 10px;
 }
 
-.section-content span:before {
+.gb-about .section-content span:before {
 	left: 100%;
 }
 
-.section-content span:after {
+.gb-about .section-content span:after {
 	right: 100%;
 }
 
-.section-padding {
+.gb-about .section-padding {
 	padding: 100px 0;
 	overflow: hidden;
 }

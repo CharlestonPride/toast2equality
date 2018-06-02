@@ -8,6 +8,7 @@ export default class Section extends Component {
             <div className="container-fluid text-center">
                 <div className="section-title">
                     <h1>{this.props.title}</h1>
+                    {this.props.desc.length > 0 && <h4>{this.props.desc}</h4>}
                 </div>
                 <div className="col section-content">
                 {this.props.children}

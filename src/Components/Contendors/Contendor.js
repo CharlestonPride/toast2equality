@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Contendor extends Component {
 
     Social(props) {
-    return <li className="list-inline-item"><a target="_blank" href={props.url}><i className={"icofont icofont-" + props.icon} aria-hidden="true"></i></a></li>
+        return props.page.length > 0 && <li className="list-inline-item"><a target="_blank" href={props.url + props.page +"/?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors"}><i className={"icofont icofont-" + props.icon} aria-hidden="true"></i></a></li>
     
 }
   render(props) {
@@ -21,10 +21,10 @@ export default class Contendor extends Component {
                         <div className="contendor-block"/>
                         <div className="contendor-social">
                             <ul className="global-list list-inline">
-                                <this.Social icon="social-facebook" url={"https://facebook.com/" + this.props.facebook}/>
-                                <this.Social icon="social-twitter" url={"https://twitter.com/" + this.props.twitter}/>
-                                <this.Social icon="social-instagram" url={"https://instagram.com/" + this.props.instagram}/>
-                                <this.Social icon="web" url={this.props.web}/>
+                                <this.Social icon="social-facebook" url="https://facebook.com/" page={this.props.facebook}/>
+                                <this.Social icon="social-twitter" url="https://twitter.com/" page={this.props.twitter}/>
+                                <this.Social icon="social-instagram" url="https://instagram.com/" page={this.props.instagram}/>
+                                <this.Social icon="web" url="" page={this.props.web}/>
                             </ul>
                         </div>
                     </div>

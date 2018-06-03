@@ -22,11 +22,11 @@ export default class Sponsors extends Component {
     return (
         <Section id="sponsors" title="Our Sponsors" desc="" >
             <Slider {...settings}>
-                <Sponsor image={Mix959} facebook="mix959" twitter="mix96live" instagram="mix959live" web="http://mix959.com"/>
-                <Sponsor image={InvitationOnly} facebook="InvitationOnlyLLC" twitter="" instagram="" web="https://www.invitationonlycharleston.com" />
-                <Sponsor image={Blackbaud} facebook="blackbaud" twitter="blackbaud" instagram="blackbaud" web="https://www.blackbaud.com"/>
-                <Sponsor image={DavidAylor} facebook="AylorLaw" twitter="DavidAylor" instagram="davidaylorlawoffices" web="https://davidaylor.com/"/>
-                <Sponsor image={DMProductions} facebook="chsweddingdj" twitter="" instagram="dandm_productions" web="https://www.alowcountryevent.com/"/>
+                <Sponsor image={Mix959} facebook="mix959" twitter="mix96live" instagram="mix959live" web="http://mix959.com" level="Promoting Sponsor - Media"/>
+                <Sponsor image={InvitationOnly} facebook="InvitationOnlyLLC" twitter="" instagram="" web="https://www.invitationonlycharleston.com" level="Supporting Sponsor - Equipment"/>
+                <Sponsor image={Blackbaud} facebook="blackbaud" twitter="blackbaud" instagram="blackbaud" web="https://www.blackbaud.com" level="Presenting Sponsor"/>
+                <Sponsor image={DavidAylor} facebook="AylorLaw" twitter="DavidAylor" instagram="davidaylorlawoffices" web="https://davidaylor.com/" level="Promoting Sponsor - Wristbands"/>
+                <Sponsor image={DMProductions} facebook="chsweddingdj" twitter="" instagram="dandm_productions" web="https://www.alowcountryevent.com/" level="Supporting Sponsor - Sound/DJ"/>
             </Slider>
         </Section>
     )

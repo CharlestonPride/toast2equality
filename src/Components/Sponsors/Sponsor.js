@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Sponsors.css'
+import SocialList from '../SocialList/SocialList'
 export default class Sponsor extends Component {
 
     Social(props) {
@@ -11,12 +12,8 @@ export default class Sponsor extends Component {
     return (
         <div className="sponsor">
             <img src={this.props.image} className="img-fluid" />
-            <div>
-                <this.Social icon="social-facebook" url="https://facebook.com/" page={this.props.facebook} />
-                <this.Social icon="social-twitter" url="https://twitter.com/" page={this.props.twitter} />
-                <this.Social icon="social-instagram" url="https://instagram.com/" page={this.props.instagram} />
-                <this.Social icon="web" url="" page={this.props.web} />
-            </div>
+            <p className="font-pacifico">{this.props.level}</p>
+            <SocialList facebook={this.props.facebook} instagram={this.props.instagram} twitter={this.props.twitter} web={this.props.web} />
         </div>
     )
   }

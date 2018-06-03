@@ -5,6 +5,8 @@ import Contest from '../Components/Contest/Contest';
 import Liquors from '../Components/Liquors/Liquors';
 import Contendors from '../Components/Contendors/Contendors';
 import Sponsors from '../Components/Sponsors/Sponsors'
+import Trucks from '../Components/Trucks/Trucks'
+import Footer from "../Components/Footer/Footer";
 
 export default class Main extends Component {
   render() {
@@ -16,6 +18,8 @@ export default class Main extends Component {
           <Liquors/>
           <Contendors/>
           <Sponsors/>
+          <Trucks/>
+          <Footer/>
       </div>
       
     )

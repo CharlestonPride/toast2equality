@@ -91,11 +91,11 @@ h2.entry-title {
 	width: 80%;
 }
 
-.list-inline {
+#contendors .list-inline {
 	padding-left: 5px;
 }
 .contendor-social li,
-.list-inline-item:not(:last-child) {
+#contendors .list-inline-item:not(:last-child) {
 	float: left;
 	font-size: 12px;
 	color: #43575d;

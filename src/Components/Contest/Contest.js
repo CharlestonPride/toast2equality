@@ -26,7 +26,6 @@ export default class Contest extends Component {
                     <span>
                         <i className="fa fa-trophy" aria-hidden="true"></i>
                     </span>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ export default class Truck extends Component {
 
     return (
         <div className="truck">
-            <img src={this.props.image} className="img-fluid" />
+            <img src={this.props.image} alt={this.props.name + " logo"} className="img-fluid" />
             <SocialList facebook={this.props.facebook} twitter={this.props.twitter} instagram={this.props.instagram} web={this.props.web}/>
         </div>
     )

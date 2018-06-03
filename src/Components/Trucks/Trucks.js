@@ -14,18 +14,38 @@ export default class Trucks extends Component {
       var settings = {
           infinite: true,
           speed: 500,
+          dots: true,
+          autoplay: true,
           slidesToShow: 4,
           slidesToScroll: 1,
-          autoplay: true
+          responsive: [
+              {
+                  breakpoint: 750,
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2,
+                      autoplay: true
+                  }
+              },
+              {
+                  breakpoint: 480,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      autoplay: true,
+                      dots: true
+                  }
+              }
+          ]
       };
     return (
         <Section id="trucks" title="Food Trucks" desc="" >
             <Slider {...settings}>
-                <Truck image={Braised} facebook="braisedinthesouthfoodtruck" twitter="braisedtruck" instagram="braisedinthesouth" web="http://braisedinthesouthfoodtruck.com" />
-                <Truck image={CarolinaCreole} facebook="charlestonCaribbeancreolefoodtruck" twitter="charlestoncarib" instagram="charlestoncaribbeancreole" web="http://www.charlestoncaribbeancreole.com/" />
-                <Truck image={DIGRig} facebook="DIGRIG" twitter="DIGCHS" instagram="DIGCHS" web="http://dighospitality.com/the-dig-rig/" />
-                <Truck image={KingOfPops} facebook="kingofpops" twitter="kingofpops" instagram="kingofpops" web="https://kingofpops.com/" />
-                <Truck image={Semilla} facebook="semillachs" twitter="semillachs" instagram="semillachs" web="http://semillachs.com/" />
+                <Truck name="Braised in the South" image={Braised} facebook="braisedinthesouthfoodtruck" twitter="braisedtruck" instagram="braisedinthesouth" web="http://braisedinthesouthfoodtruck.com" />
+                <Truck name="Carolina Creole" image={CarolinaCreole} facebook="charlestonCaribbeancreolefoodtruck" twitter="charlestoncarib" instagram="charlestoncaribbeancreole" web="http://www.charlestoncaribbeancreole.com/" />
+                <Truck name="DIG Rig" image={DIGRig} facebook="DIGRIG" twitter="DIGCHS" instagram="DIGCHS" web="http://dighospitality.com/the-dig-rig/" />
+                <Truck name="King of Pops" image={KingOfPops} facebook="kingofpops" twitter="kingofpops" instagram="kingofpops" web="https://kingofpops.com/" />
+                <Truck name="Semilla" image={Semilla} facebook="semillachs" twitter="semillachs" instagram="semillachs" web="http://semillachs.com/" />
             </Slider>
         </Section>
     )

@@ -261,3 +261,42 @@ select {
 .widget_media_image img {
 	width: 100%;
 }
+
+.slick-dots li,
+.slick-dots li button {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.slick-dots li button:before {
+	background-color: #333333;
+	opacity: 1;
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+}
+
+.slick-dots li button:hover:before, 
+.slick-dots li button:hover:before, 
+.slick-dots li.slick-active button:before {
+	background-color: #f26522;
+	opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before
+ {
+  color: #f26522;
+  font-size: 45px;
+  font-family: "fontawesome";
+  opacity: 1;
+}
+.slick-prev:before {
+	content: "\f104";
+}
+.slick-next:before {
+	content: "\f105";
+}

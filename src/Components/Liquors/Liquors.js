@@ -27,7 +27,7 @@ export default class Liquors extends Component {
                   <Liquor image={RumHaven} name="RumHaven Coconut Rum" url={rumHaven} />
             </div>
               <div className="row">
-                  <img className="breakthru img-fluid" src={Breakthru} />
+                  <img className="breakthru img-fluid" alt="Breakthru Beverage Logo" src={Breakthru} />
               </div>
         </Section>
     )

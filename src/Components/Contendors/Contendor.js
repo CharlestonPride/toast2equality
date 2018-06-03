@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Contendor extends Component {
 
     Social(props) {
-        return props.page.length > 0 && <li className="list-inline-item"><a target="_blank" href={props.url + props.page +"/?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors"}><i className={"icofont icofont-" + props.icon} aria-hidden="true"></i></a></li>
+        return props.page.length > 0 && <li className="list-inline-item"><a target="_blank" href={props.url + props.page +"/?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors"}><i className={"icofont icofont-" + props.icon}></i></a></li>
     
 }
   render(props) {

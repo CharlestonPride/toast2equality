@@ -38,17 +38,17 @@ constructor(props) {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <a href="#" className="navbar-brand"><i className="icofont icofont-cocktail"></i>Toast to Equality</a>
+                    <a href="#home" className="navbar-brand"><i className="icofont icofont-cocktail"></i>Toast to Equality</a>
 
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav onepage-nav">
-                            <li className="nav-item scroll active"><a className="nav-link" href="#home">Home</a> </li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#about">About</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#food-menu">Menu</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#reservation">Reservation</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#gallery">Gallery</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#blog">Blog</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#contact">Contact</a></li>
+                            <li className="nav-item scroll"><a className="nav-link" href="#about">The Contest</a></li>
+                            <li className="nav-item scroll"><a className="nav-link" href="#contendors">The Contendors</a></li>
+                            <li className="nav-item scroll"><a className="nav-link" href="#liquors">The Liquors</a></li>
+                            <li className="nav-item scroll"><a className="nav-link" href="#sponsors">Our Sponsors</a></li>
+                            <li className="nav-item scroll"><a className="nav-link" href="#trucks">Food Trucks</a></li>
+                            <li className="nav-item scroll"><a className="nav-link" href="#event">Event</a></li>
+                            <li className="nav-item scroll"><a className="nav-link" href="#tickets">Tickets</a></li>
                         </ul>
                     </div>
                 </div>

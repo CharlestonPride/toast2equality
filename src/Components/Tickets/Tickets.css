@@ -1,0 +1,11 @@
+iframe {
+    min-height: 1000px;
+    margin: auto;
+    width: 80%;
+    background: #fff;
+}
+
+#tickets {
+    background-color: #6090BF;
+    background-image: url("./3px-tile.png");
+}

@@ -5,7 +5,7 @@ export default class Liquor extends Component {
     return (
         <div className="col-6 col-md-4 col-lg-2">
             <div className="liquor">
-                <img src={this.props.image} className="img-fluid" />
+                <img src={this.props.image} alt={this.props.name + " logo"} className="img-fluid" />
                 <div className="gb-overlay">
                     <div className="overlay-content">
                         <div className="row">

@@ -17,7 +17,7 @@ export default class Sponsors extends Component {
           speed: 500,
           slidesToShow: 4,
           slidesToScroll: 1,
-          autoplay: false
+          autoplay: true
       };
     return (
         <Section id="sponsors" title="Our Sponsors" desc="" >

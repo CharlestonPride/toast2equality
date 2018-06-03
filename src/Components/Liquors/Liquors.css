@@ -59,3 +59,8 @@ h1 {
  	font-size: 20px;
 	margin: 15px 40px;
 }
+
+.breakthru {
+	margin: auto;
+    height: 200px;
+}

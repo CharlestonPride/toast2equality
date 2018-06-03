@@ -1,3 +1,12 @@
 a.social{
     margin: 12px;
 }
+
+.slick-slide img {
+    margin: auto;
+}
+
+.slick-slide img:hover {
+    border-bottom: solid #f26522;
+
+}

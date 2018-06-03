@@ -16,7 +16,6 @@ export default class Contendor extends Component {
                     </div>
                 </div>
                 <div className="entry-content">
-                    <h2 className="entry-title">{this.props.name}</h2>
                     <div className="row">
                         <div className="contendor-block"/>
                         <div className="contendor-social">

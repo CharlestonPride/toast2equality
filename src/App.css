@@ -144,7 +144,6 @@ textarea.form-control {
 .section-title h1{
 	font-size: 45px;
 	color: #f26522;
-	margin: 0;
 	font-weight: normal;
 }
 
@@ -158,11 +157,10 @@ textarea.form-control {
 
 .section-title span {
 	display: inline-block;
-	font-size: 20px;
+	font-size: 40px;
 	position: relative;
 	margin: 0 0 30px;
 	color: #f26522;
-	background-color: #fff;
 }
 
 .section-title span:before,

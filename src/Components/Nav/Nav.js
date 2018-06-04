@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './Nav.css'
+import Logo from './logo.png'
+import LogoAlt from './logo_h.png'
 
 export default class Nav extends Component {
 
@@ -7,7 +9,8 @@ constructor(props) {
   super(props)
 
   this.state = {
-      fixedClass: "navbar fixed-top navbar-toggleable-md animated slideInDown"
+      fixedClass: "navbar fixed-top navbar-toggleable-md animated slideInDown",
+      src: Logo
   }
 }
 
@@ -29,6 +32,15 @@ constructor(props) {
             fixedClass: navClass
         });
     }
+
+    mouseOver = () => {
+        this.setState({ src: LogoAlt })
+    }
+
+    mouseOut = () => {
+        this.setState({ src: Logo })
+    }
+
   render() {
     return (
         <div className="gb-menu">
@@ -38,7 +50,8 @@ constructor(props) {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <a href="#home" className="navbar-brand"><i className="icofont icofont-cocktail"></i>Toast to Equality</a>
+                    <a href="#home" className="navbar-brand" onMouseOver={this.mouseOver}
+                        onMouseOut={this.mouseOut} ><img class="img-fluid" src={this.state.src} alt="Logo"/></a>
 
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav onepage-nav">

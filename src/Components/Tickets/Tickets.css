@@ -9,3 +9,9 @@ iframe {
     background-color: #6090BF;
     background-image: url("./3px-tile.png");
 }
+
+@media (max-width: 991px) {
+    iframe {
+        width: 100%;
+    }
+}

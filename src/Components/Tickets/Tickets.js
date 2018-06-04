@@ -8,8 +8,19 @@ export default class Tickets extends Component {
   render() {
     return (
       <Section id="tickets" title="Tickets">
-        <div className="container">
-          <iframe id="etapIframe" title="donate" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/donate.html"></iframe>
+        <div className="center-text">
+          <h2>$15 - Online </h2>
+          <h2>$20 - At Door</h2>
+          <h2>FREE - <a href="https://www.charlestonpride.org/friends/" rel="noopener noreferrer" target="_blank" >Friends of Pride</a> </h2>
+          
+          <p><strong>12</strong> Complimentary Sample Tickets</p>
+          <p><strong>1</strong> Voting Ticket</p>
+          <p>Access to Cash Bar</p>
+          <p>Souvenir Cup</p>
+          <p>Souvenir Drawstring Bag</p>
+        </div>
+        <div className="row">
+          <iframe id="etapIframe" title="donate" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/toast.html"></iframe>
           <script src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js" type="text/JavaScript"></script>
         </div>
       </Section>

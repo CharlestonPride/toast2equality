@@ -5,9 +5,26 @@ iframe {
     background: #fff;
 }
 
-#tickets {
-    background-color: #6090BF;
-    background-image: url("./3px-tile.png");
+
+
+#tickets h2 a {
+    text-decoration: underline;
+}
+
+#tickets ul {
+	margin-top: 30px;
+}
+
+#tickets ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#tickets p{
+    font-size: 1.2rem;
 }
 
 @media (max-width: 991px) {

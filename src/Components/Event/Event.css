@@ -1,7 +1,46 @@
-#event {
+#about {
     margin: 20px;
 }
 
-#event .section-title{
+#about .section-title{
     margin-bottom: 0;
+}
+
+#about h2 {
+    max-width: 500px;
+    margin: 5px auto;
+}
+
+#about h2 a {
+    color: #5a6a72;
+    text-decoration: underline;
+}
+#about h2 a {
+    text-decoration: underline;
+}
+
+#about h2 a:hover {
+    color: #f26522;
+    text-decoration: underline;
+}
+
+#about {
+	font-size: 1.2rem;
+	padding-left: 40px;
+}
+
+#about ul {
+	margin-top: 30px;
+}
+
+#about ul li {
+    list-style: none;
+	position: relative;
+	padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#about strong {
+    color: #f26522;
 }

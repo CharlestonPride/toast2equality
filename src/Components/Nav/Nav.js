@@ -51,17 +51,17 @@ constructor(props) {
                     </button>
 
                     <a href="#home" className="navbar-brand" onMouseOver={this.mouseOver}
-                        onMouseOut={this.mouseOut} ><img class="img-fluid" src={this.state.src} alt="Logo"/></a>
+                        onMouseOut={this.mouseOut} ><img className="img-fluid" src={this.state.src} alt="Logo"/></a>
 
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav onepage-nav">
+                            <li className="nav-item scroll"><a className="nav-link" href="#about">About</a></li>
                             <li className="nav-item scroll"><a className="nav-link" href="#about">The Contest</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#contendors">The Contendors</a></li>
+                            <li className="nav-item scroll"><a className="nav-link" href="#contenders">The Contenders</a></li>
                             <li className="nav-item scroll"><a className="nav-link" href="#liquors">The Liquors</a></li>
                             <li className="nav-item scroll"><a className="nav-link" href="#sponsors">Our Sponsors</a></li>
                             <li className="nav-item scroll"><a className="nav-link" href="#trucks">Food Trucks</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#event">Event</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#tickets">Tickets</a></li>
+                            <li className="nav-item scroll ticket"><a className="nav-link" href="#tickets">Tickets</a></li>
                         </ul>
                     </div>
                 </div>

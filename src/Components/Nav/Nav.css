@@ -16,6 +16,14 @@
     background-color: #000;
 }
 
+.nav-item.ticket {
+	background-color: #f26522;
+}
+.nav-item.ticket:hover {
+	background-color: #fff;
+	color: #f26522;
+	border: solid 1px #f26522;
+}
 
 .navbar-toggleable-md .navbar-nav .nav-link  {
 	color: #fff;

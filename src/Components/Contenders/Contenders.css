@@ -1,7 +1,6 @@
 
-#contendors {
-    background-color: #6090BF;
-	background-image: url("./bedge-grunge.png")
+#contenders {
+	background-image: url("./cream_pixels.png")
 }
 
 .gb-post {
@@ -90,11 +89,11 @@ h2.entry-title {
 	width: 80%;
 }
 
-#contendors .list-inline {
+#contenders .list-inline {
 	padding-left: 5px;
 }
 .contendor-social li,
-#contendors .list-inline-item:not(:last-child) {
+#contenders .list-inline-item:not(:last-child) {
 	float: left;
 	font-size: 12px;
 	color: #43575d;

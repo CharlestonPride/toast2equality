@@ -1,5 +1,6 @@
 #about {
-    margin: 20px;
+	margin: 20px;
+	font-size: 1.2rem;
 }
 
 #about .section-title{
@@ -26,11 +27,6 @@
 #about h2 a:hover {
     color: #f26522;
     text-decoration: underline;
-}
-
-#about {
-	font-size: 1.2rem;
-	padding-left: 40px;
 }
 
 #about ul {
@@ -75,4 +71,8 @@
 
 #about .details span:after {
 	right: 100%;
+}
+
+#about .location {
+	margin-top: 20px;
 }

@@ -2,11 +2,6 @@
     color: #f26522;
 }
 
-#liquors h1 {
-	font-size: 45px;
-	margin-bottom: 45px;
-}
-
 .gb-overlay {
 	position: absolute;
 	content: "";

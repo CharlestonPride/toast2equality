@@ -3,7 +3,6 @@ import Slider from 'react-slick'
 import Section from '../Section/Section';
 import Truck from './Truck'
 import './Trucks.css'
-import Braised from './braised.png'
 import CarolinaCreole from './carolinaCreole.png'
 import DIGRig from './DIGRIGsmall.png'
 import KingOfPops from './kingOfPops.jpg'
@@ -41,7 +40,6 @@ export default class Trucks extends Component {
     return (
         <Section id="trucks" title="Food Trucks" desc="" >
             <Slider {...settings}>
-                <Truck name="Braised in the South" image={Braised} facebook="braisedinthesouthfoodtruck" twitter="braisedtruck" instagram="braisedinthesouth" web="http://braisedinthesouthfoodtruck.com" />
                 <Truck name="Carolina Creole" image={CarolinaCreole} facebook="charlestonCaribbeancreolefoodtruck" twitter="charlestoncarib" instagram="charlestoncaribbeancreole" web="http://www.charlestoncaribbeancreole.com/" />
                 <Truck name="DIG Rig" image={DIGRig} facebook="DIGRIG" twitter="DIGCHS" instagram="DIGCHS" web="http://dighospitality.com/the-dig-rig/" />
                 <Truck name="King of Pops" image={KingOfPops} facebook="kingofpops" twitter="kingofpops" instagram="kingofpops" web="https://kingofpops.com/" />

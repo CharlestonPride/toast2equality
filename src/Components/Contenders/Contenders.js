@@ -11,11 +11,12 @@ import Tabbuli from './tabbuli.jpg'
 import Toast from './toast.png'
 import Voodoo from './voodoo.jpg'
 import Warehouse from './warehouse.jpg'
+import Semilla from './semilla_dark.jpg'
 
 export default class Contenders extends Component {
   render() {
     return (
-        <Section id="contenders" title="The Contenders" desc="Each bar will create a speciality cocktail using their chosen liquor">            
+        <Section id="contenders" title="The Contenders" desc="">            
           <div className="row">
           <Contender name="DIG in the Park" facebook="diginthepark" twitter="digchs" instagram="digchs" web="http://dighospitality.com/dig-in-the-park" logo={Dig} />
           <Contender name="Dudleys on Ann" facebook="dudleysonann" twitter="dudleysonann" instagram="dudleysonann" web="http://www.dudleysonann.com" logo={Dudleys} />
@@ -26,6 +27,7 @@ export default class Contenders extends Component {
           <Contender name="Toast" facebook="ToastofCharleston" twitter="toastcharleston" instagram="toastofcharleston" web="http://www.toastofcharleston.com" logo={Toast} />
           <Contender name="Voodoo Tiki Bar" facebook="VooTikiBar" twitter="voodoo_tikibar" instagram="voodootikibar" web="http://www.voodootikibar.com" logo={Voodoo} />
           <Contender name="Warehouse" facebook="warehousecharleston" twitter="team_warehouse" instagram="wearewarehouse" web="http://wearewarehouse.com" logo={Warehouse} />
+          <Contender name="Semilla" facebook="semillachs" twitter="semillachs" instagram="semillachs" web="http://semillachs.com/" logo={Semilla}  />
           </div>
         </Section>
     )

@@ -18,7 +18,7 @@ export default class Footer extends Component {
                     </div>
                     <div className="col-md-3">
                         <p><strong>Questions/Comments?</strong></p>
-                        <p><a href="mailto:toast@charlestonpride.org">toast@charlestonpride.org</a></p>
+                        <p><a href="mailto:info@toasttoequality.com">info@toasttoequality.com</a></p>
                     </div>
                 </div>
             </div>

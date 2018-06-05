@@ -5,20 +5,39 @@ import './Event.css'
 export default class Event extends Component {
   render() {
     return (
-      <Section id="about" title="About" desc="">
+      <Section id="about" title="The Contest" desc="A Cocktail Competition">
+      
+      <div className="details">
+        <h2>12 Local Bars</h2>
+        <p>Serving up complimentary competition samples to all attendees</p>
+        <span>
+          <i className="fa fa-plus" aria-hidden="true"></i>
+        </span>
+        <h2>6 Liquors</h2>
+        <p>Each bar will be randomly assigned one of the six liquors for their cocktail</p>
+        <span>
+          <i className="fa fa-plus" aria-hidden="true"></i>
+        </span>
+        <h2 className="font-pacifico colored">Your Vote</h2>
+        <p>You help determine the winner after you've sampled them all!</p>
+        <span>
+          <i className="fa fa-ticket" aria-hidden="true"></i>
+        </span>
+        <h2>1 Winner</h2>
+        <p>Winning Cocktail will be the Official Cocktail of <a href="https://www.charlestonpride.org/" rel="noopener noreferrer" target="_blank">Charleston Pride 2018</a></p>
+        <span>
+          <i className="fa fa-trophy" aria-hidden="true"></i>
+        </span>
+       </div> 
         
-        <h2><a href="#contest">Cocktail Competition</a> to Determine Official Cocktail of <a href="https://www.charlestonpride.org/" rel="noopener noreferrer" target="_blank">Charleston Pride 2018</a>.</h2>
-        <h3>Ticket Includes:</h3>
-        <p>Complimentary competition samples (1-2 oz) for all attendees as part of your ticket purchase!</p>
-        <p><strong>Your</strong> vote determines the official cocktail after you've sampled them all!</p>
-        <p>Cash bar on site for additional fun!</p>
-        <p><a href="#trucks">Food trucks</a> <strong>&amp;</strong> live entertainment!</p>
+        <p>Cash Bar <span className="colored">,</span> <a href="#trucks">Food Trucks</a> <span className="colored">&amp;</span> <a href="#entertainment">Live Entertainment!</a></p>
 
-        <h1>August 4, 2018 7PM - 11PM</h1>
+
+        <h2 className="font-pacifico">August 4, 2018 7PM - 11PM</h2>
         <h2>Charleston Visitor Center Bus Shed</h2>
         <h3>375 Meeting St.</h3>
         <h3>Charleston, SC 29403</h3>
-        <h3>21+ Only</h3>
+        <h3 className="colored">21+ Only</h3>
       </Section>
     )
   }

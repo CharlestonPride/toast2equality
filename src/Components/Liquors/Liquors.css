@@ -1,8 +1,8 @@
-.font-pacifico {
+#liquors .font-pacifico {
     color: #f26522;
 }
 
-h1 {
+#liquors h1 {
 	font-size: 45px;
 	margin-bottom: 45px;
 }

@@ -5,7 +5,7 @@ export default class SocialList extends Component {
 
     Social(props) {
         return props.page && props.page.length > 0 
-        && <a className="social" target="_blank" href={props.url + props.page + "/?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors"}><i className={"icofont icofont-" + props.icon}></i></a>
+          && <a className="social" target="_blank" rel="noopener noreferrer" href={props.url + props.page + "/?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors"}><i className={"icofont icofont-" + props.icon}></i></a>
     }
 
   render() {

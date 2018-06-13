@@ -12,8 +12,10 @@ import Toast from './toast.png'
 import Voodoo from './voodoo.jpg'
 import Warehouse from './warehouse.jpg'
 import Semilla from './semilla_dark.jpg'
+import Placeholder from './placeholder.jpg'
 
 export default class Contenders extends Component {
+  
   render() {
     return (
         <Section id="contenders" title="The Contenders" desc="">            
@@ -28,6 +30,7 @@ export default class Contenders extends Component {
           <Contender name="Voodoo Tiki Bar" facebook="VooTikiBar" twitter="voodoo_tikibar" instagram="voodootikibar" web="http://www.voodootikibar.com" logo={Voodoo} />
           <Contender name="Warehouse" facebook="warehousecharleston" twitter="team_warehouse" instagram="wearewarehouse" web="http://wearewarehouse.com" logo={Warehouse} />
           <Contender name="Semilla" facebook="semillachs" twitter="semillachs" instagram="semillachs" web="http://semillachs.com/" logo={Semilla}  />
+          <Contender name="" facebook="" twitter="" instagram="" web="" logo={Placeholder}/>
           </div>
         </Section>
     )

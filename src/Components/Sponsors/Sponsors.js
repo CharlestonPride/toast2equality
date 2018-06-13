@@ -8,6 +8,10 @@ import DavidAylor from './davidaylor.jpg'
 import InvitationOnly from './invitationOnly.png'
 import DMProductions from './dmproductions.png'
 import Dudleys from './dudleys.jpg'
+import Barefoot from './barefoot.png'
+import Beau from './beau.jpg'
+import Budlight from './budlight.jpg'
+import DrinksWithJay from './drinkswithjay.jpg'
 
 export default class Sponsors extends Component {
     
@@ -56,6 +60,10 @@ export default class Sponsors extends Component {
                 <Sponsor name="Dudley's on Ann" image={Dudleys} facebook="dudleysonann" twitter="dudleysonann" instagram="dudleysonann" web="http://www.dudleysonann.com" level="Presenting Sponsor" />
                 <Sponsor name="David Aylor Law Firm" image={DavidAylor} facebook="AylorLaw" twitter="DavidAylor" instagram="davidaylorlawoffices" web="https://davidaylor.com/" level="Promoting Sponsor"/>
                 <Sponsor name="D&amp;M Productions" image={DMProductions} facebook="chsweddingdj" twitter="" instagram="dandm_productions" web="https://www.alowcountryevent.com/" level="Supporting Sponsor"/>
+                <Sponsor name="Barefoot Wines" image={Barefoot} facebook="BarefootWine" instagram="BarefootWine" twitter="BarefootWine" web="https://www.barefootwine.com/" level="Supporting Sponsor" />
+                <Sponsor name="Drinks With Jay" image={DrinksWithJay} facebook="drinkswithjay" instagram="drinkswithjay" twitter="" web="https://www.drinkswithjay.com/" level="Supporting Sponsor"/>
+                <Sponsor name="BEAU Magazine" image={Beau} facebook="BEAUMagazineCHS" instagram="beau.magazine" twitter="beau_magazine" web="https://beau-magazine.com/" level="Promoting Sponsor" />
+                <Sponsor name="Bud Light" image={Budlight} facebook="budlight" instagram="budlight" twitter="budlight" web="http://www.budlight.com/" level="Supporting Sponsor" />
             </Slider>
         </Section>
     )

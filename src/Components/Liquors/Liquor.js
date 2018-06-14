@@ -12,7 +12,7 @@ export default class Liquor extends Component {
                             <h3 className="align-middle" >{this.props.name}</h3>
                         </div>
                         <div className="row">
-                            <a href={this.props.url} target="_blank"><i className="icofont icofont-web"></i></a>
+                            <a href={this.props.url} target="_blank"><i className="fa fa-globe"></i></a>
                         </div>
                     </div>
                 </div>

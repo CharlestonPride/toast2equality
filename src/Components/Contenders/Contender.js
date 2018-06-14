@@ -6,14 +6,14 @@ export default class Contendor extends Component {
         return props.page.length > 0 && <li className="list-inline-item"><a target="_blank" rel="noopener noreferrer" href={props.url + props.page +"/?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors"}><i className={"fa fa-" + props.icon}></i></a></li>
     }
     Contact(props) {
-        return <li className="list-inline-item"><a href={props.link}><i className="fa fa-mail"></i> Contact Us</a></li>
+        return <li className="list-inline-item"><a href={props.link}><i className="fa fa-envelope"></i> Contact Us</a></li>
     }
   render(props) {
     return (
             <div className="gb-post">
                 <div className="entry-header">
                     <div className="entry-thumbnail">
-                        <a href={this.props.web}><img src={this.props.logo} alt={this.props.title + " logo"} className="img-fluid" /></a>
+                        <a href={this.props.web}><img src={this.props.logo} alt={this.props.title + " logo"} width="250px" height="250px" /></a>
                     </div>
                 </div>
                 <div className="entry-content">

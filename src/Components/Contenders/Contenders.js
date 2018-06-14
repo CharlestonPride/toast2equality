@@ -25,6 +25,7 @@ export default class Contenders extends Component {
       autoplay: true,
       slidesToShow: 4,
       slidesToScroll: 1,
+      lazyLoad: true,
       responsive: [
         {
           breakpoint: 1100,

@@ -17,6 +17,7 @@ export default class Trucks extends Component {
           autoplay: true,
           slidesToShow: 4,
           slidesToScroll: 1,
+          lazyLoad: true,
           responsive: [
               {
                   breakpoint: 750,

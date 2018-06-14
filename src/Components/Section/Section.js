@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Section.css'
+import Cocktail from './cocktail.svg'
 
 export default class Section extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class Section extends Component {
                     <h1 className="animated fadeInUp">{this.props.title}</h1>
                     {this.props.desc && this.props.desc.length > 0 && <h4>{this.props.desc}</h4>}
                     <span>
-                        <i className="icofont icofont-cocktail" aria-hidden="true"></i>
+                        <img src={Cocktail} alt="cocktail"/>
                     </span>
                 </div>
                 <div className="col section-content">

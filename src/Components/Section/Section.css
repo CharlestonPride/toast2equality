@@ -3,6 +3,10 @@ h1{
     font-family: 'Pacifico', cursive;
 }
 
+.section-title img {
+    vertical-align: baseline;
+}
+
 .animated {
     -webkit-animation-delay: .6s !important;
        -moz-animation-delay: .6s !important;

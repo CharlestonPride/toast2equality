@@ -2,3 +2,11 @@ h1{
     text-shadow: 1px 1px 2px #ddd;
     font-family: 'Pacifico', cursive;
 }
+
+.animated {
+    -webkit-animation-delay: .6s !important;
+       -moz-animation-delay: .6s !important;
+        -ms-animation-delay: .6s !important;
+         -o-animation-delay: .6s !important;
+            animation-delay: .6s !important;
+}

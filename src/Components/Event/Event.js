@@ -33,7 +33,7 @@ export default class Event extends Component {
         <p>Cash Bar <span className="colored">,</span> <a href="#trucks">Food Trucks</a> <span className="colored">&amp;</span> <a href="#entertainment">Live Entertainment!</a></p>
 
 
-        <h2 className="font-pacifico colored">August 4, 2018 7PM - 11PM</h2>
+        <h2 className="font-pacifico colored">August 4, 2018 7pm - 11pm</h2>
         <div className="location">
           <h2>Charleston Visitor Center Bus Shed</h2>
           <h3>375 Meeting St.</h3>

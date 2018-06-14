@@ -9,7 +9,7 @@ constructor(props) {
   super(props)
 
   this.state = {
-      fixedClass: "navbar fixed-top navbar-toggleable-md animated slideInDown",
+      fixedClass: "navbar fixed-top navbar-expand-lg animated slideInDown",
       src: Logo
   }
 }
@@ -23,7 +23,7 @@ constructor(props) {
     }
 
     handleScroll(event){
-        var navClass = "navbar fixed-top navbar-toggleable-md animated slideInDown";
+        var navClass = "navbar fixed-top navbar-expand-lg animated slideInDown";
         if (window.scrollY > 50) {
             navClass += " menu-bg";
         }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Slider from 'react-slick'
 import Section from '../Section/Section'
 import './Contenders.css'
 import Contender from "./Contender"
@@ -17,9 +18,36 @@ import Placeholder from './placeholder.jpg'
 export default class Contenders extends Component {
   
   render() {
+    var settings = {
+      infinite: true,
+      speed: 600,
+      dots: true,
+      autoplay: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+          }
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            dots: true
+          }
+        }
+      ]
+    };
     return (
         <Section id="contenders" title="The Contenders" desc="">            
-          <div className="row">
+        <Slider {...settings}>
           <Contender name="DIG in the Park" facebook="diginthepark" twitter="digchs" instagram="digchs" web="http://dighospitality.com/dig-in-the-park" logo={Dig} />
           <Contender name="Dudleys on Ann" facebook="dudleysonann" twitter="dudleysonann" instagram="dudleysonann" web="http://www.dudleysonann.com" logo={Dudleys} />
           <Contender name="El Jefe" facebook="eljefe.chs" twitter="eljefechs" instagram="eljefe.chs" web="https://www.eljefechs.com" logo={ElJefe} />
@@ -30,8 +58,8 @@ export default class Contenders extends Component {
           <Contender name="Voodoo Tiki Bar" facebook="VooTikiBar" twitter="voodoo_tikibar" instagram="voodootikibar" web="http://www.voodootikibar.com" logo={Voodoo} />
           <Contender name="Warehouse" facebook="warehousecharleston" twitter="team_warehouse" instagram="wearewarehouse" web="http://wearewarehouse.com" logo={Warehouse} />
           <Contender name="Semilla" facebook="semillachs" twitter="semillachs" instagram="semillachs" web="http://semillachs.com/" logo={Semilla}  />
-          <Contender name="" facebook="" twitter="" instagram="" web="" logo={Placeholder}/>
-          </div>
+          <Contender name="" facebook="" twitter="" instagram="" web="mailto:info@toasttoequality.com?subject=Contender Registration" logo={Placeholder}/>
+          </Slider>
         </Section>
     )
   }

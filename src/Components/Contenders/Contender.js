@@ -6,11 +6,10 @@ export default class Contendor extends Component {
         return props.page.length > 0 && <li className="list-inline-item"><a target="_blank" rel="noopener noreferrer" href={props.url + props.page +"/?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors"}><i className={"icofont icofont-" + props.icon}></i></a></li>
     }
     Contact(props) {
-        return <li className="list-inline-item"><a href="mailto:info@toasttoequality.com?subject=Contender Registration"><i className="icofont icofont-email"></i></a></li>
+        return <li className="list-inline-item"><a href={props.link}><i className="icofont icofont-email"></i> Contact Us</a></li>
     }
   render(props) {
     return (
-        <div className="col-12 col-md-4 col-lg-3">
             <div className="gb-post">
                 <div className="entry-header">
                     <div className="entry-thumbnail">
@@ -25,14 +24,12 @@ export default class Contendor extends Component {
                                 <this.Social icon="social-facebook" url="https://facebook.com/" page={this.props.facebook}/>
                                 <this.Social icon="social-twitter" url="https://twitter.com/" page={this.props.twitter}/>
                                 <this.Social icon="social-instagram" url="https://instagram.com/" page={this.props.instagram}/>
-                                <this.Social icon="web" url="" page={this.props.web}/>
-                                {this.props.web.length === 0 && <this.Contact/>}
+                                {this.props.web.length > 0 && this.props.web.startsWith("mailto:") ? <this.Contact link={this.props.web}/> : <this.Social icon="web" url="" page={this.props.web} /> }
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     )
   }
 }

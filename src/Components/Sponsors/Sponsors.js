@@ -63,7 +63,7 @@ export default class Sponsors extends Component {
                 <Sponsor name="D&amp;M Productions" image={DMProductions} facebook="chsweddingdj" twitter="" instagram="dandm_productions" web="https://www.alowcountryevent.com/" level="Supporting Sponsor"/>
                 <Sponsor name="Barefoot Wines" image={Barefoot} facebook="BarefootWine" instagram="BarefootWine" twitter="BarefootWine" web="https://www.barefootwine.com/" level="Supporting Sponsor" />
                 <Sponsor name="Drinks With Jay" image={DrinksWithJay} facebook="drinkswithjay" instagram="drinkswithjay" twitter="" web="https://www.drinkswithjay.com/" level="Supporting Sponsor"/>
-                <Sponsor name="BEAU Magazine" image={Beau} facebook="BEAUMagazineCHS" instagram="beau.magazine" twitter="beau_magazine" web="https://beau-magazine.com/" level="Promoting Sponsor" />
+                <Sponsor name="BEAU Magazine" image={Beau} facebook="BEAUMagazineCHS" instagram="beau.magazine" twitter="" web="https://beau-magazine.com/" level="Promoting Sponsor" />
                 <Sponsor name="Bud Light" image={Budlight} facebook="budlight" instagram="budlight" twitter="budlight" web="http://www.budlight.com/" level="Supporting Sponsor" />
             </Slider>
         </Section>

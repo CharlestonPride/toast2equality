@@ -7,6 +7,7 @@ import CarolinaCreole from './carolinaCreole.png'
 import DIGRig from './DIGRIGsmall.png'
 import KingOfPops from './kingOfPops.jpg'
 import Semilla from './semilla_dark.jpg'
+import Rolled from './rolled.jpeg'
 
 export default class Trucks extends Component {
   render() {
@@ -41,10 +42,11 @@ export default class Trucks extends Component {
     return (
         <Section id="trucks" title="Food Trucks" desc="" >
             <Slider {...settings}>
-                <Truck name="Carolina Creole" image={CarolinaCreole} facebook="charlestonCaribbeancreolefoodtruck" twitter="charlestoncarib" instagram="charlestoncaribbeancreole" web="http://www.charlestoncaribbeancreole.com/" />
-                <Truck name="DIG Rig" image={DIGRig} facebook="DIGRIG" twitter="DIGCHS" instagram="DIGCHS" web="http://dighospitality.com/the-dig-rig/" />
-                <Truck name="King of Pops" image={KingOfPops} facebook="kingofpops" twitter="kingofpops" instagram="kingofpops" web="https://kingofpops.com/" />
-                <Truck name="Semilla" image={Semilla} facebook="semillachs" twitter="semillachs" instagram="semillachs" web="http://semillachs.com/" />
+                <Truck name="Carolina Creole" image={CarolinaCreole} facebook="charlestonCaribbeancreolefoodtruck" twitter="charlestoncarib" instagram="charlestoncaribbeancreole" web="http://www.charlestoncaribbeancreole.com" />
+                <Truck name="DIG Rig" image={DIGRig} facebook="DIGRIG" twitter="DIGCHS" instagram="DIGCHS" web="http://dighospitality.com/the-dig-rig" />
+                <Truck name="King of Pops" image={KingOfPops} facebook="kingofpops" twitter="kingofpops" instagram="kingofpops" web="https://kingofpops.com" />
+                <Truck name="Semilla" image={Semilla} facebook="semillachs" twitter="semillachs" instagram="semillachs" web="http://semillachs.com" />
+                <Truck name="Rolled Quesadillas" image={Rolled} facebook="RolledQuesadillas1" twitter="Rolledqdillas" instagram="rolledquesadillas" web="http://rolledquesadillas.com" />
             </Slider>
         </Section>
     )

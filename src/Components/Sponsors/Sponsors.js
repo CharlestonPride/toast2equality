@@ -26,7 +26,7 @@ export default class Sponsors extends Component {
           lazyLoad: true,
           responsive: [
               {
-                  breakpoint: 1100,
+                  breakpoint: 1250,
                   settings: {
                       slidesToShow: 3,
                       slidesToScroll: 1,
@@ -34,7 +34,7 @@ export default class Sponsors extends Component {
                   }
               },
               {
-                  breakpoint: 750,
+                  breakpoint: 950,
                   settings: {
                       slidesToShow: 2,
                       slidesToScroll: 2,
@@ -42,7 +42,7 @@ export default class Sponsors extends Component {
                   }
               },
               {
-                  breakpoint: 480,
+                  breakpoint: 675,
                   settings: {
                       slidesToShow: 1,
                       slidesToScroll: 1,

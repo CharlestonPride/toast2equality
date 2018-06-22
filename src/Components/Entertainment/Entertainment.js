@@ -13,13 +13,13 @@ export default class Entertainment extends Component {
             </div>
             <div className="container text-center">
                 <div className="row">
-                    <div className="col-sm-4">
+                    <div className="col-md-4">
                         <div className="convenience">
                             <img src={Disc} alt="disc"/>
                             <h1>DJ Trevor D</h1>
                         </div>
                     </div>
-                    <div className="col-sm-4">
+                    <div className="col-md-4">
                         <div className="convenience">
                             <img src={Microphone} alt="microphone" />
                             <h1>MC Mike Edwards </h1>
@@ -27,7 +27,7 @@ export default class Entertainment extends Component {
                             <h2>Two Girls &amp; a Guy</h2>
                         </div>
                     </div>
-                    <div className="col-sm-4">
+                    <div className="col-md-4">
                         <div className="convenience">
                             <img src={Guitar} alt="guitar"/>
                             <h1>Live Bands</h1>

@@ -31,6 +31,14 @@ export default class Contenders extends Component {
         {
           breakpoint: 1100,
           settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+          }
+        },
+        {
+          breakpoint: 950,
+          settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
             autoplay: true,

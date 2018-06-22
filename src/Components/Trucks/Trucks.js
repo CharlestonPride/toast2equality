@@ -21,7 +21,15 @@ export default class Trucks extends Component {
           lazyLoad: true,
           responsive: [
               {
-                  breakpoint: 750,
+                  breakpoint: 1100,
+                  settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 1,
+                      autoplay: true
+                  }
+              },
+              {
+                  breakpoint: 850,
                   settings: {
                       slidesToShow: 2,
                       slidesToScroll: 2,
@@ -29,7 +37,7 @@ export default class Trucks extends Component {
                   }
               },
               {
-                  breakpoint: 480,
+                  breakpoint: 570,
                   settings: {
                       slidesToShow: 1,
                       slidesToScroll: 1,

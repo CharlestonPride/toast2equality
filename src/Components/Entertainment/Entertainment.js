@@ -23,13 +23,16 @@ export default class Entertainment extends Component {
                         <div className="convenience">
                             <img src={Microphone} alt="microphone" />
                             <h1>MC Mike Edwards </h1>
-                            <h2>Mix 95.9 Two Girls &amp; a Guy</h2>
+                            <h2>Mix 95.9</h2>
+                            <h2>Two Girls &amp; a Guy</h2>
                         </div>
                     </div>
                     <div className="col-sm-4">
                         <div className="convenience">
                             <img src={Guitar} alt="guitar"/>
                             <h1>Live Bands</h1>
+                            <h2>Jump Castle Riot</h2>
+                            <h2>Bender Funk</h2>
                         </div>
                     </div>
                 </div>

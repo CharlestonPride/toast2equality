@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class Liquor extends Component {
   render(props) {
+      const utm = "?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors"
     return (
         <div className="col-6 col-md-4 col-lg-2">
             <div className="liquor">
@@ -9,10 +10,12 @@ export default class Liquor extends Component {
                 <div className="gb-overlay">
                     <div className="overlay-content">
                         <div className="row">
+                            <div className="col">
                             <h3 className="align-middle" >{this.props.name}</h3>
+                            </div>
                         </div>
                         <div className="row">
-                            <a href={this.props.url} target="_blank"><i className="fa fa-globe"></i></a>
+                            <a href={this.props.url + utm} target="_blank" rel="noopener noreferrer"><i className="fa fa-globe"></i></a>
                         </div>
                     </div>
                 </div>

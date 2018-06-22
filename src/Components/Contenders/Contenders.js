@@ -13,7 +13,8 @@ import Toast from './toast.png'
 import Voodoo from './voodoo.jpg'
 import Warehouse from './warehouse.jpg'
 import Semilla from './semilla_dark.jpg'
-import Placeholder from './placeholder.jpg'
+import Proof from './proof.png'
+import Macintosh from './macintosh.png'
 
 export default class Contenders extends Component {
   
@@ -59,7 +60,8 @@ export default class Contenders extends Component {
           <Contender name="Voodoo Tiki Bar" facebook="VooTikiBar" twitter="voodoo_tikibar" instagram="voodootikibar" web="http://www.voodootikibar.com" logo={Voodoo} />
           <Contender name="Warehouse" facebook="warehousecharleston" twitter="team_warehouse" instagram="wearewarehouse" web="http://wearewarehouse.com" logo={Warehouse} />
           <Contender name="Semilla" facebook="semillachs" twitter="semillachs" instagram="semillachs" web="http://semillachs.com/" logo={Semilla}  />
-          <Contender name="" facebook="" twitter="" instagram="" web="mailto:info@toasttoequality.com?subject=Contender Registration" logo={Placeholder}/>
+          <Contender name="The Macintosh" facebook="TheMacintoshCharleston" twitter="macintoshchs" instagram="macintoshchs" web="http://themacintoshcharleston.com/" logo={Macintosh} />
+          <Contender name="Proof" facebook="proofcharleston" twitter="proofonking" instagram="semillachs" web="http://www.charlestonproof.com/" logo={Proof} />
           </Slider>
         </Section>
     )

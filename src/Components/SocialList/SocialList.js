@@ -11,10 +11,10 @@ export default class SocialList extends Component {
   render() {
     return (
       <div>
-        <this.Social icon="facebook-square" url="https://facebook.com/" page={this.props.facebook} />
-        <this.Social icon="twitter-square" url="https://twitter.com/" page={this.props.twitter} />
-        <this.Social icon="instagram" url="https://instagram.com/" page={this.props.instagram} />
-        <this.Social icon="globe" url="" page={this.props.web} />
+        {this.props.facebook && <this.Social icon="facebook-square" url="https://facebook.com/" page={this.props.facebook} />}
+        {this.props.twitter && <this.Social icon="twitter-square" url="https://twitter.com/" page={this.props.twitter} />}
+        {this.props.instagram && <this.Social icon="instagram" url="https://instagram.com/" page={this.props.instagram} />}
+        {this.props.web && <this.Social icon="globe" url="" page={this.props.web} />}
       </div>
     )
   }

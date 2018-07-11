@@ -15,7 +15,7 @@ export default class Contendor extends Component {
                 <div className="entry-header">
                     <div className="entry-thumbnail">
                     <a target="_blank" rel="noopener noreferrer" href={this.props.data.web + "?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors"}>
-                    <img src={"https://s3.amazonaws.com/charlestonpride.assets/toast/contenders/" +this.props.data.logo} alt={this.props.data.name + " logo"} width="250px" height="250px" /></a>
+                    <img src={"https://d2f908d3j7stzr.cloudfront.net/toast/contenders/" +this.props.data.logo} alt={this.props.data.name + " logo"} width="250px" height="250px" /></a>
                     </div>
                 </div>
                 <div className="entry-content">

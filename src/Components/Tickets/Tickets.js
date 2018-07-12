@@ -16,8 +16,9 @@ export default class Tickets extends Component {
           <p><strong>12</strong> Complimentary Sample Tickets</p>
           <p><strong>1</strong> Voting Ticket</p>
           <p>Access to Cash Bar</p>
-          <p>Souvenir Cup</p>
-          <p>Souvenir Drawstring Bag</p>
+          <p className="asterisk">Souvenir Cup</p>
+          <p className="asterisk">Souvenir Drawstring Bag</p>
+          <p><small>Limited to first 1000 attendees</small></p>
         </div>
         <div className="row">
           <iframe id="etapIframe" title="donate" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/toast.html"></iframe>

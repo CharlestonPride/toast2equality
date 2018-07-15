@@ -30,9 +30,7 @@ export default class Entertainment extends Component {
                     <div className="col-md-4">
                         <div className="convenience">
                             <img src={Guitar} alt="guitar"/>
-                            <h1>Live Bands</h1>
-                            <h2>Jump Castle Riot</h2>
-                            <h2>Bender Funk</h2>
+                            <h1>Bender Funk</h1>
                         </div>
                     </div>
                 </div>

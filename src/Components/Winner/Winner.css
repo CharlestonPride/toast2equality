@@ -1,0 +1,11 @@
+#winner .colored {
+    color: #f26522;
+    font-size: 2em;
+}
+#winner h1 {
+  line-height: 2em;
+}
+
+#winner {
+background-image: url("./mirrored-squares.png")
+}

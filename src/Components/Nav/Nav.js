@@ -61,7 +61,7 @@ constructor(props) {
                             <li className="nav-item scroll"><a className="nav-link" href="#entertainment">Entertainment</a></li>
                             <li className="nav-item scroll"><a className="nav-link" href="#sponsors">Our Sponsors</a></li>
                             <li className="nav-item scroll"><a className="nav-link" href="#trucks">Food Trucks</a></li>
-                            <li className="nav-item scroll ticket"><a className="nav-link" href="#tickets">Tickets</a></li>
+                            {/* <li className="nav-item scroll ticket"><a className="nav-link" href="#tickets">Tickets</a></li> */}
                         </ul>
                     </div>
                 </div>

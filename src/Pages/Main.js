@@ -7,8 +7,9 @@ import Sponsors from '../Components/Sponsors/Sponsors'
 import Trucks from '../Components/Trucks/Trucks'
 import Footer from "../Components/Footer/Footer"
 import Event from "../Components/Event/Event"
-import Tickets from "../Components/Tickets/Tickets"
 import Entertainment from '../Components/Entertainment/Entertainment'
+import Winnder from '../Components/Winner/Winner'
+import Winner from '../Components/Winner/Winner';
 
 export default class Main extends Component {
   render() {
@@ -16,16 +17,16 @@ export default class Main extends Component {
       <div>
           <Nav/>
           <Hero/>
+          <Winner/>
           <Event />
           <Contenders />
           <Liquors/>
           <Entertainment />
           <Sponsors/>
           <Trucks/>
-          <Tickets />
           <Footer/>
       </div>
-      
+
     )
   }
 }

@@ -19,7 +19,7 @@ export default class Liquors extends Component {
       const camerena = "http://www.tequilacamarena.com/tequilas/silver/"
       const rumHaven = "http://www.rumhaven.com/"
       return (
-        <Section id="liquors" title="The 2018 Liquors">
+        <Section id="liquors" title="The Liquors" desc="2018">
             <div className="row">
               <Liquor image={Peach} name="New Amsterdam Peach Vodka" url={peach} />
               <Liquor image={Camarena} name="Camerena Tequila Silver" url={camerena} />

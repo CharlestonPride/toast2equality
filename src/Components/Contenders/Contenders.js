@@ -85,7 +85,7 @@ export default class Contenders extends Component {
       ]
     };
     return (
-      <Section id="contenders" title="The 2018 Contenders" desc="">
+      <Section id="contenders" title="The Contenders" desc="2018">
         <Slider {...settings}>
           {this.state.contenders.map(c =>
             <Contender key={c.id} data={c}/>)}

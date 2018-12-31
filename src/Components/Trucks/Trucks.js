@@ -48,7 +48,7 @@ export default class Trucks extends Component {
           ]
       };
     return (
-        <Section id="food" title="The 2018 Food" desc="" >
+        <Section id="food" title="The Food" desc="2018" >
             <Slider {...settings}>
                 <Truck name="Carolina Creole" image={CarolinaCreole} facebook="charlestonCaribbeancreolefoodtruck" twitter="charlestoncarib" instagram="charlestoncaribbeancreole" web="http://www.charlestoncaribbeancreole.com" />
                 <Truck name="DIG Rig" image={DIGRig} facebook="DIGRIG" twitter="DIGCHS" instagram="DIGCHS" web="http://dighospitality.com/the-dig-rig" />

@@ -57,7 +57,7 @@ export default class Sponsors extends Component {
             ]
         };
         return (
-            <Section id="sponsors" title="The 2018 Sponsors" desc="" >
+            <Section id="sponsors" title="The Sponsors" desc="2018" >
                 <Slider {...settings}>
                     {this.state.sponsors.map(s =>
                         <Sponsor key={s.id} data={s} />)}

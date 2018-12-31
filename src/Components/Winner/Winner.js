@@ -13,19 +13,19 @@ class Winner extends Component {
       </div>
       <div className="container text-center">
       <div className="row">
-              <div className="col-md-4">
+              <div className="col-lg-4">
                   <div className="convenience">
                       <img src={jay} alt="Jay of El Jefe"/>
                   </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-lg-4">
                   <div className="convenience">
                   <img src={logo} alt="El Jefe Logo"/>
                   <h1 className="colored">The Naughty Pool Boy</h1>
                       <h2>The Official Cocktail of Charleston Pride 2018</h2>
                   </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-lg-4">
                   <div className="convenience">
                       <img src={trophy} alt="trophy"/>
                   </div>

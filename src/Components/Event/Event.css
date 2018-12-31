@@ -1,39 +1,39 @@
-#about {
+#contest {
 	margin: 20px;
 	font-size: 1.2rem;
 }
 
-#about .section-title{
+#contest .section-title{
     margin-bottom: 0;
 }
 
-#about h2 {
+#contest h2 {
     max-width: 500px;
     margin: 5px auto;
 }
 
-#about .colored{
+#contest .colored{
     color: #f26522;
 }
 
-#about h2 a {
+#contest h2 a {
     color: #5a6a72;
     text-decoration: underline;
 }
-#about h2 a {
+#contest h2 a {
     text-decoration: underline;
 }
 
-#about h2 a:hover {
+#contest h2 a:hover {
     color: #f26522;
     text-decoration: underline;
 }
 
-#about ul {
+#contest ul {
 	margin-top: 30px;
 }
 
-#about ul li {
+#contest ul li {
     list-style: none;
 	position: relative;
 	padding-left: 25px;
@@ -41,11 +41,15 @@
     font-size: 20px;
 }
 
-#about strong {
+#contest strong {
     color: #f26522;
 }
 
-#about .details span {
+#contest .details {
+	padding: 30px;
+}
+
+#contest .details span {
 	display: inline-block;
 	font-size: 20px;
 	position: relative;
@@ -54,8 +58,8 @@
 	background-color: #fff;
 }
 
-#about .details span:before,
-#about .details span:after {
+#contest .details span:before,
+#contest .details span:after {
 	position: absolute;
 	content: "";
 	top: 50%;
@@ -65,14 +69,35 @@
 	margin: 0 10px;
 }
 
-#about .details span:before {
+#contest .details span:before {
 	left: 100%;
 }
 
-#about .details span:after {
+#contest .details span:after {
 	right: 100%;
 }
 
-#about .location {
+#contest .location {
 	margin-top: 20px;
+}
+
+#contest .datetime {
+	background-color: #f26522;
+	color: white;
+	padding: 30px;
+}
+
+#contest .datetime a{
+	color: white;
+}
+
+#contest .datetime .event-image {
+    padding: 15px;
+	background-color: #f9f9f9;
+	max-width: 400px;
+	margin: 20px auto;
+}
+
+#contest .datetime h1 {
+	text-shadow: 1px 1px #5a6a72;
 }

@@ -6,7 +6,6 @@ import Sponsors from '../Components/Sponsors/Sponsors'
 import Trucks from '../Components/Trucks/Trucks'
 import Event from "../Components/Event/Event"
 import Entertainment from '../Components/Entertainment/Entertainment'
-import Winner from '../Components/Winner/Winner';
 import Tickets from '../Components/Tickets/Tickets'
 
 export default class Main extends Component {
@@ -16,7 +15,6 @@ export default class Main extends Component {
           <Hero/>
           <Event />
           <Contenders />
-          <Winner />
           <Liquors/>
           <Entertainment />
           <Sponsors/>

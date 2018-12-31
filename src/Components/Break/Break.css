@@ -1,0 +1,27 @@
+
+.break {
+  background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 500px;
+}
+
+#break1 {
+  background-image: url(break1.jpg);
+}
+
+#break2 {
+  background-image: url(break2.jpg);
+}
+
+#break3 {
+  background-image: url(break3.jpg);
+}
+
+#break4 {
+  background-image: url(break4.jpg);
+}
+
+#break5 {
+  background-image: url(break5.jpg);
+}

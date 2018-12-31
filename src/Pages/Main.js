@@ -7,6 +7,7 @@ import Trucks from '../Components/Trucks/Trucks'
 import Event from "../Components/Event/Event"
 import Entertainment from '../Components/Entertainment/Entertainment'
 import Tickets from '../Components/Tickets/Tickets'
+import Break from '../Components/Break/Break';
 
 export default class Main extends Component {
   render() {
@@ -14,11 +15,16 @@ export default class Main extends Component {
       <div>
           <Hero/>
           <Event />
+          <Break sid="break1"/>
           <Contenders />
+          <Break sid="break2"/>
           <Liquors/>
+          <Break sid="break3"/>
           <Entertainment />
           <Sponsors/>
+          <Break sid="break4"/>
           <Trucks/>
+          <Break sid="break5"/>
           <Tickets />
       </div>
 

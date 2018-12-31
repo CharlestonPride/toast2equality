@@ -9,7 +9,7 @@ export default class Entertainment extends Component {
     return (
         <div id="entertainment" className="gb-convenience section-padding gb-parallax text-center">
             <div className="section-title">
-                <h1>Entertainment</h1>
+                <h1>2018 Entertainment</h1>
             </div>
             <div className="container text-center">
                 <div className="row">

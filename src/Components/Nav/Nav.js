@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './Nav.css'
 import Logo from './logo.png'
 import LogoAlt from './logo_h.png'
+import NavLink from './NavLink'
+import { HashLink } from 'react-router-hash-link';
 
 export default class Nav extends Component {
 
@@ -50,18 +52,25 @@ constructor(props) {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <a href="#home" className="navbar-brand" onMouseOver={this.mouseOver}
-                        onMouseOut={this.mouseOut} ><img className="img-fluid" src={this.state.src} alt="Logo"/></a>
+                    <HashLink to="/#home" className="navbar-brand" onMouseOver={this.mouseOver}
+                        onMouseOut={this.mouseOut} ><img className="img-fluid" src={this.state.src} alt="Logo"/></HashLink>
 
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav onepage-nav">
-                            <li className="nav-item scroll"><a className="nav-link" href="#about">The Contest</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#contenders">The Contenders</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#liquors">The Liquors</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#entertainment">Entertainment</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#sponsors">Our Sponsors</a></li>
-                            <li className="nav-item scroll"><a className="nav-link" href="#trucks">Food Trucks</a></li>
-                            {/* <li className="nav-item scroll ticket"><a className="nav-link" href="#tickets">Tickets</a></li> */}
+                            <NavLink to="/#contest">The Contenst</NavLink>
+                            <NavLink to="/#contenders">The Contenders</NavLink>
+                            <NavLink to="/#liquors">The Liquors</NavLink>
+                            <NavLink to="/#entertainment">The Entertainment</NavLink>
+                            <NavLink to="/#sponsors">The Sponsors</NavLink>
+                            <NavLink to="/#food">The Food</NavLink>
+                            <li class="nav-item gb-dropdown">
+                                <a class="nav-link" href="#">Get Involved</a>
+                                <ul class="gb-dropdown-menu">
+                                    <NavLink to="/sponsor">Sponsor</NavLink>
+                                    <NavLink to="/advertise">Advertise</NavLink>
+                                </ul>
+                            </li>
+                            <NavLink styleName="ticket" to="/#tickets">Tickets</NavLink>
                         </ul>
                     </div>
                 </div>
@@ -70,3 +79,5 @@ constructor(props) {
     )
   }
 }
+
+

@@ -85,10 +85,10 @@ export default class Contenders extends Component {
       ]
     };
     return (
-      <Section id="contenders" title="The Contenders" desc="">
+      <Section id="contenders" title="The 2018 Contenders" desc="">
         <Slider {...settings}>
           {this.state.contenders.map(c =>
-            <Contender key={c.id} data={c} />)}
+            <Contender key={c.id} data={c}/>)}
                     {this.state.contenders.length < 12 && <this.Register></this.Register>}
         </Slider>
       </Section>

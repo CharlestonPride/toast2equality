@@ -1,6 +1,6 @@
 .gb-banner {
 	padding: 220px 0;
-	background-image: url(cocktails.jpeg);
+	background-image: url(hero.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -18,7 +18,7 @@
 	line-height: 50px;
 	font-weight: normal;
     animation-delay: 0.95s;
-	-webkit-animation-delay: 0.95s;	
+	-webkit-animation-delay: 0.95s;
 	font-family: 'Pacifico', cursive;
 }
 
@@ -27,19 +27,19 @@
 	font-weight: 900;
 	margin: 0 0 20px;
     animation-delay: 0.65s;
-    -webkit-animation-delay: 0.65s;	
+    -webkit-animation-delay: 0.65s;
 }
 
 .banner-info p {
     animation-delay: 0.65s;
-	-webkit-animation-delay: 0.65s;	
+	-webkit-animation-delay: 0.65s;
 	    text-shadow: 1px 1px 2px #f26522;
 
 }
 
 .banner-info .buttons {
     animation-delay: 0.75s;
-    -webkit-animation-delay: 0.75s;	
+    -webkit-animation-delay: 0.75s;
 }
 
 .banner-info .btn.btn-primary {
@@ -89,7 +89,7 @@
     color: #f26522;
 } */
 @media (max-width: 767px) {
-	
+
 	.banner-info {
 		font-size: 1.5em;
 		line-height: 1em;
@@ -104,7 +104,7 @@
 
 /* XS Portrait */
 @media (max-width: 578px) {
-	
+
 	.gb-banner.banner-one .buttons>a.btn {
 		margin-right: 5px;
     }

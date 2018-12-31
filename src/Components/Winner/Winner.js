@@ -9,7 +9,7 @@ class Winner extends Component {
     return (
       <div id="winner" className=" section-padding text-center">
       <div className="section-title">
-          <h1>Congratulations to Our Winner</h1>
+          <h1>Congratulations to Our 2018 Winner</h1>
       </div>
       <div className="container text-center">
       <div className="row">

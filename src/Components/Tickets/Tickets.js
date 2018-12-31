@@ -20,10 +20,10 @@ export default class Tickets extends Component {
           <p className="asterisk">Souvenir Drawstring Bag</p>
           <p><small>Limited to first 1000 attendees</small></p>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <iframe id="etapIframe" title="donate" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/toast.html"></iframe>
           <script src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js" type="text/JavaScript"></script>
-        </div>
+        </div> */}
       </Section>
     )
   }

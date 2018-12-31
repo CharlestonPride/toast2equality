@@ -10,10 +10,10 @@ export default class Hero extends Component {
                 <div className="banner-info">
                     <h1 className="font-pacifico" data-animation="animated fadeInDown">Let's</h1>
                     <img src={logo} alt="logo" className="img-fluid" />
-                    <p data-animation="animated fadeInDown">August 4, 2018, 7PM-11PM</p>
+                    <p data-animation="animated fadeInDown">June 22, 2019, 7PM - 11PM</p>
                     <p>Charleston Visitor Center Bus Shed</p>
                     <div className="buttons" data-animation="animated fadeInDown">
-                        <a href="#about" className="btn btn-primary">Explore Now</a>
+                        <a href="#contest" className="btn btn-primary">Explore Now</a>
                         {/* <a href="#tickets" className="btn btn-primary button-reserve">Get Tickets</a> */}
                     </div>
                 </div>

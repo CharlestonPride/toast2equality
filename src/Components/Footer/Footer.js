@@ -13,7 +13,7 @@ export default class Footer extends Component {
                     </div>
                     <div className="col-md-6">
                         <strong>Toast to Equality</strong>
-                        <p>&copy; Copyright 2018 <a target="_blank" rel="noopener noreferrer" href="https://charlestonpride.org">Charleston Pride Festival, Inc. </a>  All Rights Reserved.</p>
+                        <p>&copy; Copyright 2019 <a target="_blank" rel="noopener noreferrer" href="https://charlestonpride.org">Charleston Pride Festival, Inc. </a>  All Rights Reserved.</p>
                         <p>Charleston Pride Festival, Inc. is a 501(c)(3) public charity under the Internal Revenue Service Code of 1986 and the State of South Carolina.</p>
                     </div>
                     <div className="col-md-3">

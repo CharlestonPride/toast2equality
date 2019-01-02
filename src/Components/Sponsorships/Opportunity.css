@@ -1,0 +1,13 @@
+.opportunity .colored{
+  color: #f26522;
+}
+
+.opportunity .description {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.opportunity ul {
+  list-style: none;
+  text-align: left;
+}

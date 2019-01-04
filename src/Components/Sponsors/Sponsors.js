@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Section from '../Section/Section';
 import Slider from 'react-slick'
+import {Link} from 'react-router-dom'
 import Sponsor from './Sponsor'
 
 export default class Sponsors extends Component {
@@ -62,6 +63,10 @@ export default class Sponsors extends Component {
                     {this.state.sponsors.map(s =>
                         <Sponsor key={s.id} data={s} />)}
                 </Slider>
+                <div className="callToAction">
+                <Link to="/sponsor" className="btn btn-primary">Sponsorship Opportunities</Link>
+                </div>
+
             </Section>
         )
     }

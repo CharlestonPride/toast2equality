@@ -63,9 +63,10 @@ constructor(props) {
                             <NavLink to="/#entertainment">The Entertainment</NavLink>
                             <NavLink to="/#sponsors">The Sponsors</NavLink>
                             <NavLink to="/#food">The Food</NavLink>
-                            <li class="nav-item gb-dropdown">
-                                <a class="nav-link" href="#">Get Involved</a>
-                                <ul class="gb-dropdown-menu">
+                            <li className="nav-item gb-dropdown">
+                                {/* eslint-disable-next-line */}
+                                <a className="nav-link" href="#">Get Involved</a>
+                                <ul className="gb-dropdown-menu">
                                     <NavLink to="/sponsor">Sponsor</NavLink>
                                     <NavLink to="/advertise">Advertise</NavLink>
                                 </ul>

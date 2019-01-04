@@ -46,8 +46,8 @@ export default class Event extends Component {
               <h3 className="">21+ Only</h3>
             </div>
             <p>Cash Bar <span className="">,</span> <a href="#food">Food</a> <span className="">&amp;</span> <a href="#entertainment">Live Entertainment!</a></p>
-            <div class="event-image">
-              <img src={event} class="img-fluid" />
+            <div className="event-image">
+              <img src={event} className="img-fluid" alt="handing out drinks" />
             </div>
             </div>
           </div>

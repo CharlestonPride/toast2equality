@@ -12,7 +12,7 @@ export default class Tickets extends Component {
           <h2>$15 - Online </h2>
           <em className="colored">(coming soon)</em>
           <h2>$20 - At the Door</h2>
-          <h2>FREE - <a href="https://www.charlestonpride.org/friends/" rel="noopener noreferrer" target="_blank" >Friends of Pride</a> </h2>
+          <h2>FREE - <a href="https://www.charlestonpride.org/friends-of-pride/" rel="noopener noreferrer" target="_blank" >Friends of Pride</a> </h2>
           <h3 className="font-pacifico">What You Get</h3>
           <p><strong>12</strong> Complimentary Sample Tickets</p>
           <p><strong>1</strong> Voting Ticket</p>

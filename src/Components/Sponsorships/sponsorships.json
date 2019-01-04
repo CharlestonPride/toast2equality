@@ -42,16 +42,16 @@
             "tickets" : 10,
             "vip" : true,
             "web": "both",
-            "posts": 10,
+            "posts": 5,
             "email" : true,
             "print" : true,
             "guide" : "half",
-            "program": "quarter"
+            "program": "one-third"
         },
         {
             "id" : 4,
             "title": "VIP Paradise",
-            "description": "New to 2019, there is just **one opportunity** for your organization to be the Toast To Equality VIP Paradise sponsor! Your logo is featured on the entrance banner to the VIP Paradise and visible to all attendees!",
+            "description": "New in 2019, there is just **one opportunity** for your organization to be the Toast To Equality VIP Paradise sponsor! Your logo is featured on the entrance banner to the VIP Paradise and visible to all attendees!",
             "price": 2500,
             "remaining": 1,
             "tickets" : 10,
@@ -61,12 +61,12 @@
             "email" : true,
             "print" : true,
             "guide" : "half",
-            "program": "quarter"
+            "program": "one-third"
         },
         {
             "id" : 5,
             "title": "Wristband",
-            "description": "Be the official wristband sponsor of Toast To Equality. There is just one opportunity to have your logo placed on the wristband of all attendees entering the event!",
+            "description": "Be the official wristband sponsor of Toast To Equality. There is just **one opportunity** to have your logo placed on the wristband of all attendees entering the event!",
             "price": 1500,
             "remaining": 1,
             "tickets" : 10,
@@ -75,12 +75,12 @@
             "email" : true,
             "print" : true,
             "guide" : "quarter",
-            "program": "quarter"
+            "program": "one-third"
         },
         {
             "id" : 6,
             "title": "Volunteer Shirt",
-            "description": "Here is your chance to have your organization seen throughout the entire event! This one opportunity lets you place your logo on the back of the Toast To Volunteers tshirt worn by all of our fantastic volunteers!",
+            "description": "Here is your chance to have your organization seen throughout the entire event! This **one opportunity** lets you place your logo on the back of the Toast To Volunteers tshirt worn by all of our fantastic volunteers!",
             "price": 1500,
             "remaining": 1,
             "tickets" : 10,
@@ -89,7 +89,7 @@
             "email" : true,
             "print" : true,
             "guide" : "quarter",
-            "program": "quarter"
+            "program": "one-third"
         },
         {
             "id" : 7,
@@ -102,7 +102,7 @@
             "posts": 1,
             "email" : true,
             "print" : true,
-            "program": "quarter"
+            "program": "one-third"
         },
         {
             "id" : 8,

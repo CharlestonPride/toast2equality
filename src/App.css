@@ -88,7 +88,7 @@ a:focus {
 }
 
 .section-padding {
-	padding: 100px 0;	
+	padding: 100px 0;
 	overflow: hidden;
 }
 
@@ -187,14 +187,14 @@ textarea.form-control {
 }
 
 select {
-    cursor: pointer;	
+    cursor: pointer;
 }
 
 .gb-breadcrumb {
 	padding: 100px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;	
+	background-position: center;
 }
 
 .breadcrumb-info {
@@ -557,9 +557,15 @@ select {
     border-radius: 100%;
 }
 
-.slick-dots li button:hover:before, 
-.slick-dots li button:hover:before, 
+.slick-dots li button:hover:before,
+.slick-dots li button:hover:before,
 .slick-dots li.slick-active button:before {
     background-color: #f26522;
     opacity: 1;
+}
+
+hr.colored {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #f2652200, #f26522bf, #f2652200);
 }

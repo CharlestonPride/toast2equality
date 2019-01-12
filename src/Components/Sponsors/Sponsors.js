@@ -3,6 +3,7 @@ import Section from '../Section/Section';
 import Slider from 'react-slick'
 import {Link} from 'react-router-dom'
 import Sponsor from './Sponsor'
+import Placeholder from './sponsor.png'
 
 export default class Sponsors extends Component {
     constructor() {
@@ -17,18 +18,35 @@ export default class Sponsors extends Component {
                 return results.json();
             })
             .then(data => {
-                this.setState({ sponsors: data })
+                let sponsors = data.filter(s => s.active).map(s =>
+                    <Sponsor key={s.id} data={s} />);
+                for(var i = sponsors.length; i< 4; i++){
+                    sponsors.push(<this.Register key={i}/>)
+                }
+                this.setState({ sponsors: sponsors })
             })
+    }
+
+    Register(props){
+        return (
+    <div className="sponsor">
+    <img src={Placeholder} alt=" become a sponsor " width="300px" height="200px" />
+    <p className="font-pacifico">Become a Sponsor</p>
+    <div>
+        <Link className="social" to="/sponsor"><i className="fa fa-globe"></i></Link>
+    </div>
+</div>)
     }
     render() {
         var settings = {
-            infinite: true,
+            infinite: false,
             speed: 600,
             dots: true,
             autoplay: true,
             slidesToShow: 4,
             slidesToScroll: 1,
             lazyLoad: true,
+            rows: 1,
             responsive: [
                 {
                     breakpoint: 1250,
@@ -60,8 +78,7 @@ export default class Sponsors extends Component {
         return (
             <Section id="sponsors" title="The Sponsors" desc="2018" >
                 <Slider {...settings}>
-                    {this.state.sponsors.map(s =>
-                        <Sponsor key={s.id} data={s} />)}
+                    {this.state.sponsors}
                 </Slider>
                 <div className="callToAction">
                 <Link to="/sponsor" className="btn btn-primary">Sponsorship Opportunities</Link>

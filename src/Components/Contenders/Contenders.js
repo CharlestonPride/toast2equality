@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 import Section from '../Section/Section'
 import './Contenders.css'
 import Contender from "./Contender"
-import Placeholder from "./placeholder.jpg"
+import Placeholder from "./contender.png"
 
 
 export default class Contenders extends Component {
@@ -20,13 +20,18 @@ export default class Contenders extends Component {
         return results.json();
       })
       .then(data => {
-        this.setState({ contenders: data })
+        let contenders = data.filter(s => s.active).map(c =>
+          <Contender key={c.id} data={c}/>);
+        for(var i = contenders.length; i < 4; i++){
+          contenders.push(<this.Register key={i}/>)
+        }
+        this.setState({ contenders: contenders })
       })
   }
 
   Register(props) {
     return (
-      <div className="gb-post">
+      <div className="gb-post register">
         <div className="entry-header">
           <div className="entry-thumbnail">
             <a href="mailto:info@toasttoequality.com?subject=Contender Registration">
@@ -85,11 +90,9 @@ export default class Contenders extends Component {
       ]
     };
     return (
-      <Section id="contenders" title="The Contenders" desc="2018">
+      <Section id="contenders" title="The Contenders" desc="">
         <Slider {...settings}>
-          {this.state.contenders.map(c =>
-            <Contender key={c.id} data={c}/>)}
-                    {this.state.contenders.length < 12 && <this.Register></this.Register>}
+          {this.state.contenders}
         </Slider>
       </Section>
     )

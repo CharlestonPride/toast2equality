@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Slider from 'react-slick'
 import Section from '../Section/Section';
 import Truck from './Truck'
+import Placeholder from './Placeholder'
 import './Trucks.css'
 import CarolinaCreole from './carolinaCreole.png'
 import DIGRig from './DIGRIGsmall.png'
@@ -10,6 +11,12 @@ import Semilla from './semilla_dark.jpg'
 import Rolled from './rolled.jpeg'
 
 export default class Trucks extends Component {
+    constructor() {
+        super();
+        this.state = {
+          trucks: [<Placeholder key="1" />, <Placeholder key="2" />, <Placeholder key="3" />, <Placeholder key="4" />],
+        }
+      }
   render() {
       var settings = {
           infinite: true,
@@ -48,13 +55,9 @@ export default class Trucks extends Component {
           ]
       };
     return (
-        <Section id="food" title="The Food" desc="2018" >
+        <Section id="food" title="The Food" >
             <Slider {...settings}>
-                <Truck name="Carolina Creole" image={CarolinaCreole} facebook="charlestonCaribbeancreolefoodtruck" twitter="charlestoncarib" instagram="charlestoncaribbeancreole" web="http://www.charlestoncaribbeancreole.com" />
-                <Truck name="DIG Rig" image={DIGRig} facebook="DIGRIG" twitter="DIGCHS" instagram="DIGCHS" web="http://dighospitality.com/the-dig-rig" />
-                <Truck name="King of Pops" image={KingOfPops} facebook="kingofpops" twitter="kingofpops" instagram="kingofpops" web="https://kingofpops.com" />
-                <Truck name="Semilla" image={Semilla} facebook="semillachs" twitter="semillachs" instagram="semillachs" web="http://semillachs.com" />
-                <Truck name="Rolled Quesadillas" image={Rolled} facebook="RolledQuesadillas1" twitter="Rolledqdillas" instagram="rolledquesadillas" web="http://rolledquesadillas.com" />
+                {this.state.trucks}
             </Slider>
         </Section>
     )

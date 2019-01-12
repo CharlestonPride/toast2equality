@@ -24,7 +24,7 @@
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
-    transform: scale(1.1);	
+    transform: scale(1.1);
 }
 
 .gb-post .clearfix {
@@ -34,13 +34,17 @@
     margin-top: 10px;
 }
 
+.gb-post.register img {
+	background: white;
+}
+
 .blog-details .gb-post:hover  .entry-header img {
 	opacity: 1;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
-    transform: scale(1);	
+    transform: scale(1);
 }
 
 .contendor-block {

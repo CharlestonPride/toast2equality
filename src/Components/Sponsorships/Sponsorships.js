@@ -15,7 +15,6 @@ class Sponsorships extends Component {
         <Break sid="break6" />
         <Section id="sponsorships" title="Sponsorship Opportunities" desc={desc}>
           <Opportunities />
-          <hr className="colored"/>
           <ETapestry id="tte-sponsorships" title="Become a Sponsor" />
         </Section>
       </div>

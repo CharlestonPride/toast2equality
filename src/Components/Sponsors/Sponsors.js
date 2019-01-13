@@ -76,7 +76,7 @@ export default class Sponsors extends Component {
             ]
         };
         return (
-            <Section id="sponsors" title="The Sponsors" desc="2018" >
+            <Section id="sponsors" title="The Sponsors" >
                 <Slider {...settings}>
                     {this.state.sponsors}
                 </Slider>

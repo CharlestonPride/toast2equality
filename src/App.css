@@ -569,3 +569,17 @@ hr.colored {
     height: 2px;
     background-image: linear-gradient(to right, #f2652200, #f26522bf, #f2652200);
 }
+
+.colored {
+    color: #f26522;
+}
+h1.colored {
+    padding: 5px;
+}
+thead {
+    color: #f26522;
+}
+
+iframe {
+    margin: 10px;
+}

@@ -6,12 +6,13 @@ import Nav from './Components/Nav/Nav';
 import Footer from './Components/Footer/Footer';
 import Sponsor from './Pages/Sponsor';
 import Advertise from './Pages/Advertise';
+import ScrollToTop from './Util/ScrollToTop';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <ScrollToTop>
           <Nav />
           <Switch>
             <Route path="/sponsor" component={Sponsor} />
@@ -19,7 +20,7 @@ class App extends Component {
             <Route component={Main} />
           </Switch>
           <Footer />
-        </div>
+        </ScrollToTop>
       </BrowserRouter>
     );
   }

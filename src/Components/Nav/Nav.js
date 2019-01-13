@@ -57,7 +57,7 @@ constructor(props) {
 
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav onepage-nav">
-                            <NavLink to="/#contest">The Contenst</NavLink>
+                            <NavLink to="/#contest">The Contest</NavLink>
                             <NavLink to="/#contenders">The Contenders</NavLink>
                             <NavLink to="/#liquors">The Liquors</NavLink>
                             <NavLink to="/#entertainment">The Entertainment</NavLink>

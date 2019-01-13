@@ -9,7 +9,7 @@ export default class Section extends Component {
             <div className="container-fluid text-center">
                 <div className="section-title">
                     <h1 className="animated fadeInUp">{this.props.title}</h1>
-                    {this.props.desc && this.props.desc.length > 0 && <h4>{this.props.desc}</h4>}
+                    {this.props.desc && this.props.desc.length > 0 && <p className="lead">{this.props.desc}</p>}
                     <span>
                         <img src={Cocktail} alt="cocktail"/>
                     </span>

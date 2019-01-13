@@ -5,10 +5,25 @@ iframe {
     background: #fff;
 }
 
-#tickets h2 a {
+#tickets .card-body a {
     text-decoration: underline;
+    color: #5a6a72;
 }
 
+#tickets .card-body  a:hover {
+    text-decoration: none;
+    color: #5a6a72;
+}
+
+#tickets .card-footer a {
+    text-decoration: underline;
+    color: white;
+}
+
+#tickets .card-footer  a:hover {
+    text-decoration: none;
+    color: #5a6a72;
+}
 #tickets ul {
 	margin-top: 30px;
 }
@@ -38,6 +53,21 @@ iframe {
 #tickets h3{
     color: #f26522;
     margin-top: 30px;
+}
+
+.vip .card-header {
+    background: #f26522;
+}
+.vip .card-header h2 {
+    color: white;
+}
+
+.vip .card {
+    border: 1px solid #f26522;
+}
+
+.vip .card-footer {
+    background: #f26522;
 }
 
 @media (max-width: 991px) {

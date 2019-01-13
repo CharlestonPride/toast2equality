@@ -20,14 +20,13 @@ export default class Main extends Component {
           <Contenders />
           <Break sid="break2"/>
           <Liquors/>
-          <Break sid="break3"/>
-          <Pride />
           <Entertainment />
           <Sponsors/>
           <Break sid="break4"/>
           <Trucks/>
           <Break sid="break5"/>
           <Tickets />
+          <Break sid="break3"/>
       </div>
 
     )

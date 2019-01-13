@@ -124,7 +124,7 @@ class Opportunity extends Component {
       <div className="opportunity col-lg-6">
         <h2>{this.props.data.title} Sponsor</h2>
         <this.Price price={this.props.data.price} remaining={this.props.data.remaining} />
-        <p className="description"><Markdown source={this.props.data.description} /></p>
+        <div className="description"><Markdown source={this.props.data.description} /></div>
         <this.Benefits>
           <this.Tickets vip={this.props.data.vip} count={this.props.data.tickets} />
           <this.Stage featured={this.props.data.featured} />

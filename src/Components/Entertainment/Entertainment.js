@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import './Entertainment.css';
-import Guitar from './guiter.svg'
-import Microphone from './microphone-alt.svg'
-import Disc from './retro-music-disk.svg'
 
 export default class Entertainment extends Component {
   render() {

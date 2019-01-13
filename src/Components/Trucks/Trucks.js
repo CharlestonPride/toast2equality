@@ -1,14 +1,8 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
 import Section from '../Section/Section';
-import Truck from './Truck'
 import Placeholder from './Placeholder'
 import './Trucks.css'
-import CarolinaCreole from './carolinaCreole.png'
-import DIGRig from './DIGRIGsmall.png'
-import KingOfPops from './kingOfPops.jpg'
-import Semilla from './semilla_dark.jpg'
-import Rolled from './rolled.jpeg'
 
 export default class Trucks extends Component {
     constructor() {

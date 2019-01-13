@@ -7,15 +7,14 @@ import { HashLink } from 'react-router-hash-link';
 
 export default class Nav extends Component {
 
-constructor(props) {
-  super(props)
+    constructor(props) {
+        super(props)
 
-  this.state = {
-      fixedClass: "navbar fixed-top navbar-expand-lg animated slideInDown",
-      src: Logo
-  }
-}
-
+        this.state = {
+            fixedClass: "navbar fixed-top navbar-expand-lg animated slideInDown",
+            src: Logo
+        }
+    }
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll.bind(this));
@@ -24,7 +23,7 @@ constructor(props) {
         window.removeEventListener('scroll', this.handleScroll.bind(this));
     }
 
-    handleScroll(event){
+    handleScroll(event) {
         var navClass = "navbar fixed-top navbar-expand-lg animated slideInDown";
         if (window.scrollY > 50) {
             navClass += " menu-bg";
@@ -43,42 +42,44 @@ constructor(props) {
         this.setState({ src: Logo })
     }
 
-  render() {
-    return (
-        <div className="gb-menu">
-            <nav className={this.state.fixedClass}>
-                <div className="container">
-                    <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+    render() {
+        return (
+            <div className="gb-menu">
+                <nav className={this.state.fixedClass}>
+                    <div className="container">
+                        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
 
-                    <HashLink to="/#home" className="navbar-brand" onMouseOver={this.mouseOver}
-                        onMouseOut={this.mouseOut} ><img className="img-fluid" src={this.state.src} alt="Logo"/></HashLink>
+                        <HashLink to="/#home" className="navbar-brand" onMouseOver={this.mouseOver}
+                            onMouseOut={this.mouseOut} ><img className="img-fluid" src={this.state.src} alt="Logo" /></HashLink>
 
-                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul className="navbar-nav onepage-nav">
-                            <NavLink to="/#contest">The Contest</NavLink>
-                            <NavLink to="/#contenders">The Contenders</NavLink>
-                            <NavLink to="/#liquors">The Liquors</NavLink>
-                            <NavLink to="/#entertainment">The Entertainment</NavLink>
-                            <NavLink to="/#sponsors">The Sponsors</NavLink>
-                            <NavLink to="/#food">The Food</NavLink>
-                            <li className="nav-item gb-dropdown">
-                                {/* eslint-disable-next-line */}
-                                <a className="nav-link" href="#">Get Involved</a>
-                                <ul className="gb-dropdown-menu">
-                                    <NavLink to="/sponsor">Sponsor</NavLink>
-                                    <NavLink to="/advertise">Advertise</NavLink>
-                                </ul>
-                            </li>
-                            <NavLink styleName="ticket" to="/#tickets">Tickets</NavLink>
-                        </ul>
+                        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul className="navbar-nav onepage-nav">
+                                <NavLink to="/#contest">The Contest</NavLink>
+                                <NavLink to="/#contenders">The Contenders</NavLink>
+                                <NavLink to="/#liquors">The Liquors</NavLink>
+                                <NavLink to="/#entertainment">The Entertainment</NavLink>
+                                <NavLink to="/#sponsors">The Sponsors</NavLink>
+                                <NavLink to="/#food">The Food</NavLink>
+                                <li className="nav-item gb-dropdown d-none d-lg-block">
+                                    {/* eslint-disable-next-line */}
+                                    <a className="nav-link" href="#">Get Involved</a>
+                                    <ul className="gb-dropdown-menu">
+                                        <NavLink to="/sponsor">Sponsor</NavLink>
+                                        <NavLink to="/advertise">Advertise</NavLink>
+                                    </ul>
+                                </li>
+                                <NavLink styleName=" d-lg-none" to="/sponsor">Get Involved - Sponsor</NavLink>
+                                <NavLink styleName=" d-lg-none" to="/advertise">Get Involved - Advertise</NavLink>
+                                <NavLink styleName="ticket" to="/#tickets">Tickets</NavLink>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-    )
-  }
+                </nav>
+            </div>
+        )
+    }
 }
 
 

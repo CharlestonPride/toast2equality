@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import Markdown from 'react-markdown'
 import NumberConverter from 'number-to-words'
 import './Opportunity.css'
@@ -106,17 +107,16 @@ class Opportunity extends Component {
     const toastPrices = { full: 400, half: 300, "one-third": 200, quarter: 150 };
     var messages = [];
 
-    //One (1) half page ad in Charleston Pride Guide ($500 value). One (1) quarter page ad in Toast To Equality program ($150 value)
     if (props.guide) {
       messages.push(`One (1) ${props.guide} page ad in Charleston Pride Guide ($${pridePrices[props.guide]} value).`)
     }
     if (props.program) {
-      messages.push(`One (1) ${props.program} page ad in Toast To Equality program ($${toastPrices[props.program]} value).`)
+      messages.push(`One (1) ${props.program} page ad in Toast To Equality Program ($${toastPrices[props.program]} value).`)
     }
     if (messages.length === 0) {
       return null;
     }
-    return <li><strong>Advertising:</strong> {messages.join(` `)}</li>;
+    return <li><strong>Advertising:</strong> {messages.join(` `)} <Link to="/advertise">More Details</Link></li>;
   }
 
   render(props) {

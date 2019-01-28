@@ -22,8 +22,8 @@ export default class Contenders extends Component {
       .then(data => {
         let contenders = data.filter(s => s.active).map(c =>
           <Contender key={c.id} data={c}/>);
-        for(var i = contenders.length; i < 4; i++){
-          contenders.push(<this.Register key={i}/>)
+        if(contenders.length < 12){
+          contenders.push(<this.Register/>)
         }
         this.setState({ contenders: contenders })
       })

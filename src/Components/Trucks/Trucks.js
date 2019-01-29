@@ -11,7 +11,7 @@ export default class Trucks extends Component {
         super();
         this.state = {
           trucks: [
-            <Truck name="Rolled Quesadillas" image={Rolled} facebook="RolledQuesadillas1" twitter="Rolledqdillas" instagram="rolledquesadillas" web="http://rolledquesadillas.com" />,
+            <Truck key="rolled" name="Rolled Quesadillas" image={Rolled} facebook="RolledQuesadillas1" twitter="Rolledqdillas" instagram="rolledquesadillas" web="http://rolledquesadillas.com" />,
           <Placeholder key="1" />, <Placeholder key="2" />, <Placeholder key="3" />],
         }
       }

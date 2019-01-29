@@ -23,7 +23,7 @@ export default class Contenders extends Component {
         let contenders = data.filter(s => s.active).map(c =>
           <Contender key={c.id} data={c}/>);
         if(contenders.length < 12){
-          contenders.push(<this.Register/>)
+          contenders.push(<this.Register key="register"/>)
         }
         this.setState({ contenders: contenders })
       })

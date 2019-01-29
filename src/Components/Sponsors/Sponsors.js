@@ -20,7 +20,7 @@ export default class Sponsors extends Component {
             .then(data => {
                 let sponsors = data.filter(s => s.active).map(s =>
                     <Sponsor key={s.id} data={s} />);
-                sponsors.push(<this.Register/>)
+                sponsors.push(<this.Register key="register"/>)
                 this.setState({ sponsors: sponsors })
             })
     }

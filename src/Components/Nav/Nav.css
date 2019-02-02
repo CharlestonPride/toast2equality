@@ -16,10 +16,10 @@
     background-color: #000;
 }
 
-.nav-item.ticket {
+.nav-item.ticket .nav-link{
 	background-color: #f26522;
 }
-.nav-item.ticket:hover {
+.nav-item.ticket .nav-link:hover, .nav-item.ticket  .nav-link:active, .nav-item.ticket .nav-link:focus {
 	background-color: #fff;
 	color: #f26522;
 	border: solid 1px #f26522;
@@ -121,6 +121,9 @@
     transform: rotateX(0deg);
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+	line-height: 25px;
+}
 
 /* lg */
 @media (min-width: 1400px) {

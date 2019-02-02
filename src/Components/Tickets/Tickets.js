@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Section from '../Section/Section'
 import './Tickets.css'
+import ETapestry from '../ETapestry/ETapestry';
 
 export default class Tickets extends Component {
 
@@ -12,7 +13,6 @@ export default class Tickets extends Component {
         </div>
         <div className="card-body">
           <h2>$15 - Online </h2>
-          <em className="colored">(coming soon)</em>
           <h2>$20 - At the Door</h2>
           <h3 className="font-pacifico">What You Get</h3>
           <ul>
@@ -38,7 +38,6 @@ export default class Tickets extends Component {
         </div>
         <div className="card-body">
           <h2>$50 - Online </h2>
-          <em className="colored">(coming soon)</em>
           <h2>FREE - <a href="https://www.charlestonpride.org/friends-of-pride/" rel="noopener noreferrer" target="_blank" >Friends of Pride</a> </h2>
           <h3 className="font-pacifico">What You Get</h3>
           <ul className="list-unstyled">
@@ -66,6 +65,11 @@ export default class Tickets extends Component {
             </div>
           </div>
         </div>
+        <ETapestry id="toast" title="Purchase Tickets"/>
+        {/* <div className="row">
+          <iframe id="etapIframe" title="donate" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/toast.html"></iframe>
+          <script src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js" type="text/JavaScript"></script>
+        </div> */}
       </Section >
     )
   }

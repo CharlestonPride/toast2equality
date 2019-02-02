@@ -14,7 +14,7 @@ export default class Hero extends Component {
                     <p>Charleston Visitor Center &amp; Bus Shed</p>
                     <div className="buttons" data-animation="animated fadeInDown">
                         <a href="#contest" className="btn btn-primary">Explore Now</a>
-                        {/* <a href="#tickets" className="btn btn-primary button-reserve">Get Tickets</a> */}
+                        <a href="#tickets" className="btn btn-primary button-reserve">Get Tickets</a>
                     </div>
                 </div>
             </div>

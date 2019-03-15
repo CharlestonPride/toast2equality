@@ -1,9 +1,8 @@
-
 .break {
   background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
 }
 
 #break1 {
@@ -32,4 +31,12 @@ height: 500px;
 
 #break7 {
   background-image: url(break7.jpg);
+}
+
+#break8 {
+  background-image: url(break8.jpg);
+}
+
+#break9 {
+  background-image: url(break9.jpg);
 }

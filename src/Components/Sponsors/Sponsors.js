@@ -37,7 +37,7 @@ export default class Sponsors extends Component {
     }
     render() {
         var settings = {
-            infinite: false,
+            infinite: true,
             speed: 600,
             dots: true,
             autoplay: true,

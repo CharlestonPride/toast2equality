@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
 import Section from '../Section/Section';
-import Placeholder from './Placeholder'
 import Truck from './Truck'
 import './Trucks.css'
-import Rolled from './rolled.jpeg'
 
 export default class Trucks extends Component {
     constructor() {
         super();
         this.state = {
           trucks: [
-            <Truck key="rolled" name="Rolled Quesadillas" image={Rolled} facebook="RolledQuesadillas1" twitter="Rolledqdillas" instagram="rolledquesadillas" web="http://rolledquesadillas.com" />,
-          <Placeholder key="1" />, <Placeholder key="2" />, <Placeholder key="3" />],
+            <Truck key="rolled" name="Rolled Quesadillas" image="rolled.jpeg" facebook="RolledQuesadillas1" twitter="Rolledqdillas" instagram="rolledquesadillas" web="http://rolledquesadillas.com" />,
+            <Truck key="braised" name="Braised in the South" image="braised.png" facebook="braisedinthesouthfoodtruck" twitter="braisedtruck" instagram="braisedinthesouth" web="http://braisedinthesouthfoodtruck.com" />,
+            <Truck key="bacon" name="Bac'n me Crazy" image="bacon.png" facebook="bacnmecrazyfoodtruck" twitter="bacnmecrazy" instagram="bacnmecrazy" web="http://www.bacnmecrazy.com/" />,
+            <Truck key="kop" name="King of Pops" image="kingOfPops.jpg" facebook="kingofpops" twitter="kingofpops" instagram="kingofpops" web="https://kingofpops.com" />,]
         }
       }
   render() {

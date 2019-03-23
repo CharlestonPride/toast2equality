@@ -1,13 +1,15 @@
-
 .slick-slide img {
-    margin: auto;
+  margin: auto;
 }
 
 .slick-slide img:hover {
-    border-bottom: solid #f26522;
-
+  border-bottom: solid #f26522;
 }
 
 #sponsors .callToAction {
-    padding: 30px;
+  padding: 30px;
+}
+
+.sponsor .font-pacifico {
+  font-size: 24px;
 }

@@ -2,8 +2,6 @@ import React, { Component } from "react";
 
 export default class Liquor extends Component {
   render(props) {
-    const utm =
-      "?utm_source=charleston_pride&utm_medium=toast_to_equality&utm_campaign=sponsors";
     return (
       <div className="col-6 col-md-4 col-lg-2">
         <div className="liquor">

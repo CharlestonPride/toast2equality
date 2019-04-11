@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Section from "../Section/Section";
 import Break from "../Break/Break";
 import ETapestry from "../ETapestry/ETapestry";
+import Ad from "./Ad";
 
 let desc =
   "Advertising in the Toast To Equality Program is a fantastic way to spread the word about your company/organization. " +
@@ -11,7 +12,30 @@ let desc =
   " We offer a variety of ways to advertise with us.";
 
 class Advertisements extends Component {
-  PricingTable() {
+  constructor() {
+    super();
+    this.state = {
+      enabled: false,
+      opportunities: []
+    };
+  }
+  componentDidMount() {
+    fetch(
+      "https://0qrq29wcf5.execute-api.us-east-1.amazonaws.com/prod/advertise"
+    )
+      .then(results => {
+        return results.json();
+      })
+      .then(data => {
+        let opportunities = data
+          .filter(a => a.id !== 0)
+          .sort((a, b) => a.id - b.id);
+        let enabled = data.find(d => d.id === 0).enabled;
+        this.setState({ opportunities: opportunities, enabled: enabled });
+      });
+  }
+
+  PricingTable(props) {
     return (
       <table className="table table-striped table-bordered">
         <thead>
@@ -22,36 +46,19 @@ class Advertisements extends Component {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>PREMIUM BACK COVER (1)</td>
-            <td>4.5" W x 5.5" H (INCLUDES BLEED)</td>
-            <td>$600</td>
-          </tr>
-          <tr>
-            <td>PREMIUM INSIDE FRONT COVER (1)</td>
-            <td>4.5" W x 5.5" H (INCLUDES BLEED)</td>
-            <td>$500</td>
-          </tr>
-          <tr>
-            <td>PREMIUM INSIDE BACK COVER (1)</td>
-            <td>4.5" W x 5.5" H (INCLUDES BLEED)</td>
-            <td>$500</td>
-          </tr>
-          <tr>
-            <td>FULL PAGE</td>
-            <td>4.5" W x 5.5" H (INCLUDES BLEED)</td>
-            <td>$400</td>
-          </tr>
-          <tr>
-            <td>HALF PAGE</td>
-            <td>3.625" W x 2.3" H</td>
-            <td>$300</td>
-          </tr>
-          <tr>
-            <td>ONE-THIRD PAGE</td>
-            <td>3.625" W x 1.5" H</td>
-            <td>$200</td>
-          </tr>
+          {props.opportunities &&
+            props.opportunities.map(o => (
+              <Ad
+                key={o.id}
+                name={o.name}
+                width={o.width}
+                height={o.height}
+                bleed={o.bleed}
+                rate={o.rate}
+                remaining={o.remaining}
+                total={o.total}
+              />
+            ))}
         </tbody>
       </table>
     );
@@ -99,7 +106,7 @@ class Advertisements extends Component {
           <div className="row">
             <div className="col-md-6 offset-md-3">
               <h1 className="colored">Options</h1>
-              <this.PricingTable />
+              <this.PricingTable opportunities={this.state.opportunities} />
             </div>
           </div>
           <div className="row">
@@ -114,7 +121,20 @@ class Advertisements extends Component {
           </div>
           <div className="row">
             <div className="col">
-              <ETapestry id="tte-advertising" title="Purchase an Ad" />
+              {!this.state.enabled ? (
+                <ETapestry id="tte-advertising" title="Purchase an Ad" />
+              ) : (
+                <div>
+                  <h3>Ad Registration is Closed.</h3>
+                  <p>
+                    Please reach out to us at{" "}
+                    <a href="mailto:info@toasttoequality.com">
+                      info@toasttoequality.com
+                    </a>{" "}
+                    if you have any questions/concerns.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </Section>

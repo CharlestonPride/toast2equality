@@ -121,7 +121,7 @@ class Advertisements extends Component {
           </div>
           <div className="row">
             <div className="col">
-              {!this.state.enabled ? (
+              {this.state.enabled ? (
                 <ETapestry id="tte-advertising" title="Purchase an Ad" />
               ) : (
                 <div>

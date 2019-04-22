@@ -1,104 +1,104 @@
 #contest {
-	margin: 20px;
-	font-size: 1.2rem;
+  margin: 20px;
+  font-size: 1.2rem;
 }
 
-#contest .section-title{
-    margin-bottom: 0;
+#contest .section-title {
+  margin-bottom: 0;
 }
 
 #contest h2 {
-    max-width: 500px;
-    margin: 5px auto;
+  max-width: 500px;
+  margin: 5px auto;
 }
 
-#contest .colored{
-    color: #f26522;
+#contest .colored {
+  color: #f26522;
 }
 
 #contest h2 a {
-    color: #5a6a72;
-    text-decoration: underline;
+  color: #5a6a72;
+  text-decoration: underline;
 }
 #contest h2 a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #contest h2 a:hover {
-    color: #f26522;
-    text-decoration: underline;
+  color: #f26522;
+  text-decoration: underline;
 }
 
 #contest ul {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 #contest ul li {
-    list-style: none;
-	position: relative;
-	padding-left: 25px;
-    margin-bottom: 10px;
-    font-size: 20px;
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 #contest strong {
-    color: #f26522;
+  color: #f26522;
 }
 
 #contest .details {
-	padding: 30px;
+  padding: 30px;
 }
 
 #contest .details span {
-	display: inline-block;
-	font-size: 20px;
-	position: relative;
-	margin: 0 0 30px;
-	color: #f26522;
-	background-color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  margin: 0 0 30px;
+  color: #f26522;
+  background-color: #fff;
 }
 
 #contest .details span:before,
 #contest .details span:after {
-	position: absolute;
-	content: "";
-	top: 50%;
-	width: 100px;
-	height: 2px;
-	background-color: #f26522;
-	margin: 0 10px;
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 100px;
+  height: 2px;
+  background-color: #f26522;
+  margin: 0 10px;
 }
 
 #contest .details span:before {
-	left: 100%;
+  left: 100%;
 }
 
 #contest .details span:after {
-	right: 100%;
+  right: 100%;
 }
 
 #contest .location {
-	margin-top: 20px;
-	padding: 0;
+  margin-top: 20px;
+  padding: 0;
 }
 
 #contest .datetime {
-	background-color: #f26522;
-	color: white;
-	padding: 30px 0;
+  background-color: #f26522;
+  color: white;
+  padding: 30px 0;
 }
 
-#contest .datetime a{
-	color: white;
+#contest .datetime a {
+  color: white;
 }
 
 #contest .datetime .event-image {
-    padding: 15px;
-	background-color: #f9f9f9;
-	max-width: 400px;
-	margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  max-width: 500px;
+  margin: 20px auto;
 }
 
 #contest .datetime h1 {
-	text-shadow: 1px 1px #5a6a72;
+  text-shadow: 1px 1px #5a6a72;
 }

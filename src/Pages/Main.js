@@ -8,6 +8,7 @@ import Event from "../Components/Event/Event";
 import Entertainment from "../Components/Entertainment/Entertainment";
 import Tickets from "../Components/Tickets/Tickets";
 import Break from "../Components/Break/Break";
+import PresentedBy from "../Components/PresentedBy/PresentedBy";
 
 export default class Main extends Component {
   render() {
@@ -17,7 +18,9 @@ export default class Main extends Component {
         <Event />
         <Break sid="break1" />
         <Contenders />
-        <Break sid="break2" />
+        <Break sid="break2">
+          <PresentedBy />
+        </Break>
         <Liquors />
         <Break sid="break10" />
         <Entertainment />

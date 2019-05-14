@@ -2,3 +2,7 @@
   padding: 20px 30px;
   color: white;
 }
+
+.row #presentedBy img {
+  max-height: 150px;
+}

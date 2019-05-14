@@ -4,14 +4,33 @@ import "./Tickets.css";
 import ETapestry from "../ETapestry/ETapestry";
 
 export default class Tickets extends Component {
-  GeneralAdmission(props) {
+  constructor() {
+    super();
+    this.state = {
+      enabled: false,
+      vip: true
+    };
+  }
+  componentDidMount() {
+    fetch(
+      "https://skvfc3ly76.execute-api.us-east-1.amazonaws.com/prod/settings/5642ec18-356e-4a8b-b7b3-617377a2918f"
+    )
+      .then(results => {
+        return results.json();
+      })
+      .then(data => {
+        this.setState({ enabled: data.enabled, vip: data.vip });
+      });
+  }
+
+  GeneralAdmission({ tickets }) {
     return (
       <div className="card">
         <div className="card-header">
           <h2>General Admission</h2>
         </div>
         <div className="card-body">
-          <h2>$15 - Online </h2>
+          {tickets ? <h2>$15 - Online </h2> : <em>Online Sales Have Ended</em>}
           <h2>$20 - At the Door</h2>
           <h3 className="font-pacifico">What You Get</h3>
           <ul>
@@ -36,14 +55,22 @@ export default class Tickets extends Component {
     );
   }
 
-  Vip(props) {
+  Vip({ tickets, vip }) {
     return (
       <div className="card vip">
         <div className="card-header">
           <h2>VIP</h2>
         </div>
         <div className="card-body">
-          <h2>$50 - Online </h2>
+          {vip ? (
+            tickets ? (
+              <h2>$50 - Online </h2>
+            ) : (
+              <h2>$50 - At the Door </h2>
+            )
+          ) : (
+            <h2 className="colored">Sold Out</h2>
+          )}
           <h2>
             FREE -{" "}
             <a
@@ -64,7 +91,17 @@ export default class Tickets extends Component {
               Access to <strong>VIP Paradise</strong>
             </li>
             <li>
-              <em>Includes Open Bar and Catering</em>
+              <em>
+                Includes Open Bar and Catering By{" "}
+                <a
+                  href="https://duvallevents.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Duvall
+                </a>
+                .
+              </em>
             </li>
             <li>Limited number of tickets available</li>
           </ul>
@@ -90,12 +127,18 @@ export default class Tickets extends Component {
         <div className="row">
           <div className="col">
             <div className="card-deck">
-              <this.GeneralAdmission />
-              <this.Vip />
+              <this.GeneralAdmission tickets={this.state.enabled} />
+              <this.Vip tickets={this.state.enabled} vip={this.state.vip} />
             </div>
           </div>
         </div>
-        <ETapestry id="toast" title="Purchase Tickets" />
+        {this.state.enabled ? (
+          <ETapestry id="toast" title="Purchase Tickets" />
+        ) : (
+          <h2 className="colored section-padding">
+            <em>Online sales have ended. Tickets avaliable at the door.</em>
+          </h2>
+        )}
       </Section>
     );
   }

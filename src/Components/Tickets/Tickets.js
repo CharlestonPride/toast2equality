@@ -8,7 +8,8 @@ export default class Tickets extends Component {
     super();
     this.state = {
       enabled: false,
-      vip: true
+      vip: true,
+      fop: false
     };
   }
   componentDidMount() {
@@ -19,7 +20,7 @@ export default class Tickets extends Component {
         return results.json();
       })
       .then(data => {
-        this.setState({ enabled: data.enabled, vip: data.vip });
+        this.setState({ enabled: data.enabled, vip: data.vip, fop: data.fop });
       });
   }
 
@@ -55,7 +56,7 @@ export default class Tickets extends Component {
     );
   }
 
-  Vip({ tickets, vip }) {
+  Vip({ tickets, vip, fop }) {
     return (
       <div className="card vip">
         <div className="card-header">
@@ -71,16 +72,18 @@ export default class Tickets extends Component {
           ) : (
             <h2 className="colored">Sold Out</h2>
           )}
-          <h2>
-            FREE -{" "}
-            <a
-              href="https://www.charlestonpride.org/friends-of-pride/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Friends of Pride
-            </a>{" "}
-          </h2>
+          {fop ? (
+            <h2>
+              FREE -{" "}
+              <a
+                href="https://www.charlestonpride.org/friends-of-pride/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Friends of Pride
+              </a>{" "}
+            </h2>
+          ) : null}
           <h3 className="font-pacifico">What You Get</h3>
           <ul className="list-unstyled">
             <li> General Admission</li>
@@ -108,13 +111,17 @@ export default class Tickets extends Component {
         </div>
         <div className="card-footer text-white">
           <p>
-            <small>
-              Friends of Pride: send us an{" "}
-              <a href="mailto:friends@charlestonpride.org?subject=Friend of Pride Reservation">
-                email
-              </a>{" "}
-              to reserve
-            </small>
+            {fop ? (
+              <small>
+                Friends of Pride: send us an{" "}
+                <a href="mailto:friends@charlestonpride.org?subject=Friend of Pride Reservation">
+                  email
+                </a>{" "}
+                to reserve
+              </small>
+            ) : (
+              <small />
+            )}
           </p>
         </div>
       </div>
@@ -128,7 +135,11 @@ export default class Tickets extends Component {
           <div className="col">
             <div className="card-deck">
               <this.GeneralAdmission tickets={this.state.enabled} />
-              <this.Vip tickets={this.state.enabled} vip={this.state.vip} />
+              <this.Vip
+                tickets={this.state.enabled}
+                vip={this.state.vip}
+                fop={this.state.fop}
+              />
             </div>
           </div>
         </div>
